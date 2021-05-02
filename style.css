@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header .header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header_menu .header_menu_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading {
+  background: #F1E4E6;
+}
+
+.heading .heading_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading .heading_items .heading_text {
+  border-left: 12px solid #F16D7F;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #222222;
+}
+
+.heading .heading_items .heading_text .the_brand {
+  font-weight: 900;
+}
+
+.heading .heading_items .heading_text .the_brand .fashion {
+  color: #F16D7F;
+}
+
+.offers .offers_parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 65px;
+  margin-bottom: 30px;
+}
+
+.offers .offers_parent .offers_item {
+  position: relative;
+}
+
+.offers .offers_parent .offers_item .offers_text {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  top: 105px;
+  bottom: 105px;
+  left: 103px;
+  right: 103px;
+}
+
+.offers .offers_parent .offers_item .offers_text .offers_image {
+  width: 100%;
+}
+
+.card .card_content {
+  background: #F8F8F8;
+  width: 360px;
+}
+
+.card .card_content .card_text {
+  text-align: center;
+}
+
+.card .card_content .card_text .card_heading {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.card .card_content .card_text .card_heading .card_paragraph {
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+}
+/*# sourceMappingURL=style.css.map */
