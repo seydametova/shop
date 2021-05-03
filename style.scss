@@ -92,27 +92,55 @@ $header-color: #F16D7F;
 
 .card {
 
-    .card_content {
-        background: #F8F8F8;
-        width: 360px;
+    .card_block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-        .card_text {
-            text-align: center;
+        .card_content {
+            background: #F8F8F8;
+            width: 360px;
+            
+            .card_heading_text {
+                text-align: center;
 
-            .card_heading {
-                text-align: center; 
-                font-size: 30px;
-                line-height: 36px;
-                color: #222222;
-        
-                .card_paragraph {
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: #9F9F9F;
-        
-                     
+                .card_heading { 
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #222222;
+            
+                    .card_paragraph_content {
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #9F9F9F;
+                        
+                        
+                    }
                 }
             }
         }
+    }
+}
+
+.footer {
+    background: #222224;
+    width: 100%;
+
+    .footer_block {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: #FBFBFB;
+
+        .footer_item {
+            font-size: 19.96px;
+            line-height: 24px;
+
+            .footer_paragraph_content {
+                font-size: 13.972px;
+                line-height: 17px;
+
+            }
+        }        
     }
 }
