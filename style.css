@@ -38,6 +38,10 @@
           align-items: center;
 }
 
+.header .header_menu .header_menu_item:not(:first-child) {
+  margin-left: 16px;
+}
+
 .heading {
   background: #F1E4E6;
 }
@@ -62,13 +66,16 @@
   font-size: 32px;
   line-height: 40px;
   color: #222222;
+  padding-left: 16px;
 }
 
 .heading .heading_items .heading_text .the_brand {
   font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
 }
 
-.heading .heading_items .heading_text .the_brand .fashion {
+.heading .heading_items .heading_text .fashion {
   color: #F16D7F;
 }
 
@@ -83,24 +90,46 @@
   margin-bottom: 30px;
 }
 
-.offers .offers_parent .offers_item {
+.offers .offers_item {
   position: relative;
+  display: block;
 }
 
-.offers .offers_parent .offers_item .offers_text {
+.offers .offers_item:hover .offers_text {
+  background-color: transparent;
+}
+
+.offers .offers_item .offers_text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
-  position: absolute;
-  top: 105px;
-  bottom: 105px;
-  left: 103px;
-  right: 103px;
+  background-color: rgba(32, 22, 22, 0.7);
 }
 
-.offers .offers_parent .offers_item .offers_text .offers_image {
-  width: 100%;
+.offers .offers_item .offers_text .offers_title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.offers .offers_item .offers_text .offers_subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  color: #F16D7F;
 }
 
 .card .card_block {
@@ -149,6 +178,7 @@
           justify-content: space-between;
   text-align: center;
   color: #FBFBFB;
+  height: 340px;
 }
 
 .footer .footer_block .footer_item {
@@ -159,5 +189,54 @@
 .footer .footer_block .footer_item .footer_paragraph_content {
   font-size: 13.972px;
   line-height: 17px;
+}
+
+.push {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  border: 1px solid #FF6A6A;
+  width: 212px;
+  height: 48px;
+  margin-top: 48px;
+  margin-bottom: 96px;
+}
+
+.footer_subscription {
+  background-image: url(img/Layer.jpg);
+  height: 448px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.footer_subscription .footer_subscription_content {
+  width: 360px;
+}
+
+.footer_rights {
+  background-color: #222224;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer_rights .footer_rights_text {
+  color: #FBFBFB;
+}
+
+.footer_rights .footer_rights_text .footer_connection_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

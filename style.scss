@@ -25,7 +25,9 @@ $header-color: #F16D7F;
             display: inline-flex;
             justify-content: center;
             align-items: center;
-
+            &:not(:first-child) {
+                margin-left:16px
+            }
         }
     }
 }
@@ -46,13 +48,16 @@ $header-color: #F16D7F;
             font-size: 32px;
             line-height: 40px;
             color: #222222;
+            padding-left: 16px;
 
             .the_brand {
-                font-weight: 900;
+                font-weight: 900;  
+                font-size: 48px;
+                line-height: 58px;     
+            }
 
-                .fashion {
-                    color: $header-color;
-                }
+            .fashion {
+                color: $header-color;
             }
         } 
     }
@@ -65,26 +70,43 @@ $header-color: #F16D7F;
         justify-content: space-between;
         margin-top: 65px;
         margin-bottom: 30px;
+    }
 
-        .offers_item {
-            position: relative;
+    .offers_item {
+        position: relative;
+        display: block;
 
+        &:hover {
             .offers_text {
-                font-size: 16px;
-                line-height: 19px;
-                text-align: center;
-                color: #FFFFFF;
-                position: absolute;
-                top: 105px;
-                bottom: 105px;
-                left: 103px;
-                right: 103px;
-    
-                .offers_image {
-                    width: 100%;
+                background-color: transparent;
+            }
+        }
 
-                    
-                }
+        .offers_text {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: rgba(32, 22, 22, 0.7);
+            
+
+            .offers_title {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .offers_subtitle {
+                font-size: 24px;
+                line-height: 30px;
+                color: $header-color;
             }
         }
     }
@@ -131,6 +153,7 @@ $header-color: #F16D7F;
         justify-content: space-between;
         text-align: center;
         color: #FBFBFB;
+        height: 340px;
 
         .footer_item {
             font-size: 19.96px;
@@ -140,7 +163,55 @@ $header-color: #F16D7F;
                 font-size: 13.972px;
                 line-height: 17px;
 
+                
             }
         }        
+    }
+}
+
+.push {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    width: 212px; 
+    height: 48px;
+    margin-top: 48px;
+    margin-bottom: 96px;
+
+    .push_button {
+    }
+
+}
+
+.footer_subscription {
+    background-image: url(img/Layer.jpg);
+    height: 448px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    .footer_subscription_content {
+        width: 360px;
+        
+    }
+    
+}
+
+.footer_rights {
+    background-color:#222224;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .footer_rights_text {
+        color: #FBFBFB;
+
+        .footer_connection_block {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
     }
 }
