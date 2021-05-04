@@ -112,32 +112,66 @@ $header-color: #F16D7F;
     }
 }
 
+.card_heading_text {
+    margin-top: 96px;
+    margin-bottom: 48px;
+
+    .card_text {
+        text-align: center;
+
+        .card_heading {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .card_paragraph {
+            margin-top: 6px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #9f9f9f;
+        }
+    }
+}
+
 .card {
 
     .card_block {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-top: -30px;
+
 
         .card_content {
+            display: block;
             background: #F8F8F8;
             width: 360px;
+            text-decoration: none;
+            color: inherit;
+            margin-top: 30px;
             
-            .card_heading_text {
-                text-align: center;
+            .card_info {
+                padding: 25px 28px 20px 16px;
 
-                .card_heading { 
-                    font-size: 30px;
-                    line-height: 36px;
-                    color: #222222;
-            
-                    .card_paragraph_content {
-                        font-size: 14px;
-                        line-height: 17px;
-                        color: #9F9F9F;
-                        
-                        
-                    }
+                .card_item {
+                    color: #000000;
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+
+                .card_paragraph_content {
+                    margin-top: 12px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #5D5D5D;
+                }
+
+                .card_value {
+                    margin-top: 18px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $header-color;
                 }
             }
         }
@@ -170,18 +204,19 @@ $header-color: #F16D7F;
 }
 
 .push {
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    border: 1px solid #FF6A6A;
-    width: 212px; 
-    height: 48px;
+    display: flex;
+    justify-content: center;
     margin-top: 48px;
-    margin-bottom: 96px;
+    margin-bottom: 96px;    
 
-    .push_button {
+    .all_products {
+        padding: 16px 38px;
+        font-size: 16px;
+        line-height: 19px;
+        border: 1px solid $header-color;
+        color: $header-color;
+        text-decoration: none;
     }
-
 }
 
 .footer_subscription {
