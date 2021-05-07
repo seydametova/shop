@@ -13,26 +13,70 @@
         rel="stylesheet">
 </head>
 
-<!-- Поменять шрифт на всей странице -->
+<!-- Добавить <nav> и выпадающее меню для (второго д/з) -->
 
 <body>
-    <div class="header">
-        <div class="header_menu container">
-            <div class="header_item">
-                <a href="#" class="header_menu_item"><img src="img/corporate_logo.svg" alt="logo"></a>
-                <a href="" class="header_menu_item"><img src="img/magnifier.svg" alt="search"></a>
-            </div>
-            <div class="header_item">
-                <a href="" class="header_menu_item"><img src="img/sandwich.svg" alt="menu"></a>
-                <a href="" class="header_menu_item"><img src="img/my_profile.svg" alt="profile"></a>
-                <a href="" class="header_menu_item"><img src="img/basket.svg" alt="basket"></a>
+    <header class="header"></header>
+    <div class="navigation">
+        <div class="header_content">
+            <div class="header_menu container">
+                <ul class="header_item">
+                    <li class="header_menu_item" href="#"><img src="img/corporate_logo.svg" alt="logo"></li>
+                    <li class="header_menu_item" href="#"><img src="img/magnifier.svg" alt="search"></li>
+                </ul>
+                <ul class="header_item">
+                    <li class="header_menu_item" href="#">
+                        <img src="img/sandwich.svg" alt="menu">
+                        <div class="site_navigation">
+                            <h3 class="navigation_header">MENU</h3>
+
+                            <nav>
+                                <ul class="site_navigation_list">
+                                    <li class="site_navigation_list_group">
+                                        <a class="group_link" href="#">MAN</a>
+                                        <ul>
+                                            <li class="link_menu"><a href="#">Accessories</a></li>
+                                            <li class="link_menu"><a href="#">Bags</a></li>
+                                            <li class="link_menu"><a href="#">Denim</a></li>
+                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="site_navigation_list_group">
+                                        <a class="group_link" href="#">WOMAN</a>
+                                        <ul>
+                                            <li class="link_menu"><a href="#">Accessories</a></li>
+                                            <li class="link_menu"><a href="#">Jackets & Coats</a></li>
+                                            <li class="link_menu"><a href="#">Polos</a></li>
+                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
+                                            <li class="link_menu"><a href="#">Shirts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="site_navigation_list_group">
+                                        <a class="group_link" href="#">KIDS</a>
+                                        <ul>
+                                            <li class="link_menu"><a href="#">Accessories</a></li>
+                                            <li class="link_menu"><a href="#">Jackets & Coats</a></li>
+                                            <li class="link_menu"><a href="#">Polos</a></li>
+                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
+                                            <li class="link_menu"><a href="#">Shirts</a></li>
+                                            <li class="link_menu"><a href="#">Bags</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                    <li class="header_menu_item" href="#"><img src="img/my_profile.svg" alt="profile"></li>
+                    <li class="header_menu_item" href="#"><img src="img/basket.svg" alt="basket"></li>
+                </ul>
             </div>
         </div>
     </div>
 
+
     <div class="heading">
         <div class="heading_items container">
-            <img src="img/men.png">
+            <img src="img/men.png" alt="photo">
             <h1 class="heading_text">
                 <span class="the_brand">THE BRAND</span><br> OF LUXERIOUS <span class="fashion">FASHION</span>
             </h1>
@@ -41,7 +85,7 @@
 
     <div class="offers container">
         <div class="offers_parent">
-            <a href="" class="offers_item">
+            <a href="#" class="offers_item">
                 <img class="offers_image" src="img/for_women.png" alt="offers">
                 <div class="offers_text">
                     <div>
@@ -51,7 +95,7 @@
                 </div>
             </a>
 
-            <a href="" class="offers_item">
+            <a href="#" class="offers_item">
                 <img class="offers_image" src="img/for_men.png" alt="offers">
                 <div class="offers_text">
                     <div>
@@ -60,7 +104,7 @@
                     </div>
                 </div>
             </a>
-            <a href="" class="offers_item">
+            <a href="#" class="offers_item">
                 <img class="offers_image" src="img/for_kids.png" alt="offers">
                 <div class="offers_text">
                     <div>
@@ -70,7 +114,7 @@
                 </div>
             </a>
         </div>
-        <a href="" class="offers_item">
+        <a href="#" class="offers_item">
             <img class="offers_image" src="img/accesories.png" alt="offers">
             <div class="offers_text">
                 <div>
@@ -92,7 +136,7 @@
 
     <div class="card container">
         <div class="card_block">
-            <a href="" class="card_content">
+            <a href="#" class="card_content">
                 <img class="сard_product" src="img/1.png" alt="product">
                 <div class="card_info">
                     <h2 class="card_item">ELLERY X M'O CAPSULE</h2>
@@ -103,7 +147,7 @@
                     <p class="card_value">$52.00</p>
                 </div>
             </a>
-            <a href="" class="card_content">
+            <a href="#" class="card_content">
                 <img class="сard_product" src="img/2.png" alt="product">
                 <div class="card_info">
                     <h2 class="card_item">ELLERY X M'O CAPSULE</h2>
@@ -114,7 +158,7 @@
                     <p class="card_value">$52.00</p>
                 </div>
             </a>
-            <a href="" class="card_content">
+            <a href="#" class="card_content">
                 <img class="сard_product" src="img/3.png" alt="product">
                 <div class="card_info">
                     <h2 class="card_item">ELLERY X M'O CAPSULE</h2>
@@ -125,7 +169,7 @@
                     <p class="card_value">$52.00</p>
                 </div>
             </a>
-            <a href="" class="card_content">
+            <a href="#" class="card_content">
                 <img class="сard_product" src="img/4.png" alt="product">
                 <div class="card_info">
                     <h2 class="card_item">ELLERY X M'O CAPSULE</h2>
@@ -147,7 +191,7 @@
                     <p class="card_value">$52.00</p>
                 </div>
             </a>
-            <a href="" class="card_content">
+            <a href="#" class="card_content">
                 <img class="сard_product" src="img/6.png" alt="product">
                 <div class="card_info">
                     <h2 class="card_item">ELLERY X M'O CAPSULE</h2>
@@ -162,7 +206,7 @@
     </div>
 
     <div class="push container">
-        <a href="" class="all_products">
+        <a href="#" class="all_products">
             Browse All Product
         </a>
     </div>
@@ -171,7 +215,7 @@
         <div class="footer_block container">
             <div class="footer_info">
                 <a class="footer_link" href="">
-                    <img class="footer_info_content" src="img/delivery.svg">
+                    <img class="footer_info_content" src="img/delivery.svg" alt="photo">
                     <h2 class="footer_item">Free Delivery</h2>
                     <p class="footer_paragraph_content">
                         Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive
@@ -181,7 +225,7 @@
             </div>
             <div class="footer_info_block">
                 <a class="footer_link" href="">
-                    <img class="footer_picture" src="img/discounts.svg">
+                    <img class="footer_picture" src="img/discounts.svg" alt="photo">
                     <h2 class="footer_item">Sales & discounts</h2>
                     <p class="footer_paragraph_content">
                         Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive
@@ -191,7 +235,7 @@
             </div>
             <div class="footer_info">
                 <a class="footer_link" href="">
-                    <img class="footer_illustration" src="img/quality_assurance.svg">
+                    <img class="footer_illustration" src="img/quality_assurance.svg" alt="photo">
                     <h2 class="footer_item">Quality assurance</h2>
                     <p class="footer_paragraph_content">
                         Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive
@@ -229,23 +273,23 @@
             </div>
             <div class="footer_connection_block">
                 <div class="footer_connection">
-                    <a href="">
-                        <img src="img/facebook.svg">
+                    <a href="#">
+                        <img src="img/facebook.svg" alt="photo">
                     </a>
                 </div>
                 <div class="footer_connection">
-                    <a href="">
-                        <img src="img/instagram.svg">
+                    <a href="#">
+                        <img src="img/instagram.svg" alt="photo">
                     </a>
                 </div>
                 <div class="footer_connection">
-                    <a href="">
-                        <img src="img/pinterest.svg">
+                    <a href="#">
+                        <img src="img/pinterest.svg" alt="photo">
                     </a>
                 </div>
                 <div class="footer_connection">
-                    <a href="">
-                        <img src="img/twitter.svg">
+                    <a href="#">
+                        <img src="img/twitter.svg" alt="photo">
                     </a>
                 </div>
             </div>

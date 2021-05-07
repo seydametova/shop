@@ -57,13 +57,13 @@ body {
   margin: 0 auto;
 }
 
-.header {
+.header_content {
   background-color: #222;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.header .header_menu {
+.header_content .header_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ body {
           align-items: center;
 }
 
-.header .header_menu .header_menu_item {
+.header_content .header_menu .header_menu_item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -85,10 +85,50 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
-.header .header_menu .header_menu_item:not(:first-child) {
+.header_content .header_menu .header_menu_item:not(:first-child) {
   margin-left: 16px;
+}
+
+.header_content .header_menu .header_menu_item .site_navigation {
+  background: #FFFFFF;
+  position: absolute;
+  top: 49px;
+  width: 232px;
+  padding: 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header_content .header_menu .header_menu_item .site_navigation .navigation_header {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+}
+
+.header_content .header_menu .header_menu_item .site_navigation .site_navigation_list .site_navigation_list_group {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.header_content .header_menu .header_menu_item .site_navigation .site_navigation_list .site_navigation_list_group .group_link {
+  color: #F16D7F;
+}
+
+.header_content .header_menu .header_menu_item .site_navigation .site_navigation_list .site_navigation_list_group .link_menu {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.header_content .header_menu .header_menu_item .site_navigation .site_navigation_list .site_navigation_list_group .link_menu a {
+  color: #6F6E6E;
+}
+
+.header_content .header_menu .header_menu_item .site_navigation .site_navigation_list .site_navigation_list_group a {
+  text-decoration: none;
 }
 
 .heading {
@@ -115,6 +155,7 @@ body {
   line-height: 40px;
   color: #222222;
   padding-left: 16px;
+  padding-right: 90px;
 }
 
 .heading .heading_items .heading_text .the_brand {
