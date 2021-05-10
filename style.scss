@@ -1,6 +1,7 @@
 @import "reset";
 
-$header-color: #F16D7F;
+$highlight-color: #F16D7F;
+$highlight-color-hover: #E05C6E;
 
 body {
     font-family: 'Lato', sans-serif;
@@ -51,7 +52,7 @@ body {
                         line-height: 17px;
 
                         .group_link {                            
-                            color: $header-color;
+                            color: $highlight-color;
                                                     } 
                         .link_menu {
                             margin-top: 12px;
@@ -68,13 +69,8 @@ body {
             }
             
         }
-
-        
     }
 }
-
-
-
 
 .heading {
     background: #F1E4E6;
@@ -85,7 +81,7 @@ body {
         align-items: center;
         
         .heading_text {
-            border-left: 12px solid $header-color;
+            border-left: 12px solid $highlight-color;
             font-style: normal;
             font-weight: 700;
             font-size: 32px;
@@ -101,7 +97,7 @@ body {
             }
 
             .fashion {
-                color: $header-color;
+                color: $highlight-color;
             }
         } 
     }
@@ -123,9 +119,12 @@ body {
         &:hover {
             .offers_text {
                 background-color: transparent;
+
+                .offer_text_container {
+                    background-color: rgba(32, 22, 22, 0.7);
+                }
             }
         }
-
         .offers_text {
             position: absolute;
             display: flex;
@@ -140,17 +139,20 @@ body {
             text-align: center;
             color: #FFFFFF;
             background-color: rgba(32, 22, 22, 0.7);
-            
 
-            .offers_title {
-                font-size: 16px;
-                line-height: 20px;
-            }
+            .offer_text_container {
+                padding: 4px;
 
-            .offers_subtitle {
-                font-size: 24px;
-                line-height: 30px;
-                color: $header-color;
+                .offers_title {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+    
+                .offers_subtitle {
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: $highlight-color;
+                }
             }
         }
     }
@@ -192,6 +194,44 @@ body {
             text-decoration: none;
             color: inherit;
             margin-top: 30px;
+
+            &:hover {
+                .image_container {
+                    .add_to_cart_container {
+                        display: flex;
+                    }
+                }
+            }
+
+            .image_container {
+                position: relative;
+
+                .add_to_cart_container {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(58, 56, 56, 0.86);
+
+                    .add_to_cart_button {
+                        padding: 10px 12px;
+                        display: inline-flex;
+                        align-items: center;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: white;
+                        border: 1px solid white;
+
+                        .button_text {
+                            margin-left: 12px;                 
+                        }
+                    }
+                }
+            }
             
             .card_info {
                 padding: 25px 28px 20px 16px;
@@ -214,7 +254,7 @@ body {
                     margin-top: 18px;
                     font-size: 16px;
                     line-height: 19px;
-                    color: $header-color;
+                    color: $highlight-color;
                 }
             }
         }
@@ -231,9 +271,14 @@ body {
         padding: 16px 38px;
         font-size: 16px;
         line-height: 19px;
-        border: 1px solid $header-color;
-        color: $header-color;
+        border: 1px solid $highlight-color;
+        color: $highlight-color;
         text-decoration: none;
+
+        &:hover {
+            background-color: $highlight-color;
+            color: white;
+        }
     }
 }
 
@@ -331,29 +376,38 @@ body {
             }
         }
 
-        .form_item {
+        .subscribe_item {
             display: flex;
             justify-content: center;
 
-            .form_input {
-                border:none;
-                outline: none;
-                padding: 7px 22px;
-                font-size: 14px;
-                line-height: 36px;
-                background: #E1E1E1;
-                color: rgba(34, 34, 36, 0.67);
-                border-radius: 36px 0 0 36px;
-            }
+            .form_item {
+                display: flex;
 
-            .form_submit {
-                border: none;
-                font-size: 14px;
-                line-height: 36px;
-                padding: 7px 22px;
-                background: $header-color;
-                color: white;
-                border-radius: 0 36px 36px 0;
+                .form_input {
+                    border:none;
+                    outline: none;
+                    padding: 7px 22px;
+                    font-size: 14px;
+                    line-height: 36px;
+                    background: #E1E1E1;
+                    color: rgba(34, 34, 36, 0.67);
+                    border-radius: 36px 0 0 36px;
+                }
+    
+                .form_submit {
+                    border: none;
+                    font-size: 14px;
+                    line-height: 36px;
+                    padding: 7px 22px;
+                    background: $highlight-color;
+                    color: white;
+                    border-radius: 0 36px 36px 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $highlight-color-hover;
+                    }
+                }
             }
         }
     }
@@ -383,8 +437,20 @@ body {
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
+                width: 32px;
+                height: 32px;
+                background-color: white;
+
                 &:not(:first-child) {
                     margin-left:8px
+                }
+                &:hover {
+                    background-color: $highlight-color;
+                    svg {
+                        path {
+                            fill: white;
+                        }
+                    }
                 }
             }
         }
