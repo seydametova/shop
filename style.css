@@ -100,6 +100,7 @@ body {
   padding: 34px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: none;
 }
 
 .header_content .header_menu .header_menu_item .site_navigation .navigation_header {
@@ -567,5 +568,93 @@ body {
 
 .footer_right .footer_right_content .footer_connection_block .footer_connection:hover svg path {
   fill: white;
+}
+
+.main .main_banner_content {
+  background: #F8F3F4;
+}
+
+.main .main_banner_content .main_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main_banner_content .main_banner .main_header {
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  padding: 60px 0;
+}
+
+.main .main_banner_content .main_banner .main_header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.main .main_banner_content .main_banner .main_header_menu .main_text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.main .main_banner_content .main_banner .main_header_menu .slash {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.main .main_banner_content .main_banner .main_header_menu .new_arrivals {
+  color: #F16D7F;
+  font-weight: 700;
+}
+
+.main .main_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main_menu .main_menu_text .main_button {
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  width: 70px;
+  height: 17px;
+}
+
+.main .main_menu .main_menu_content .main_button_menu {
+  border: none;
+  background: none;
+}
+
+.main .main_menu .main_menu_content .main_heading {
+  padding-left: 48px;
+  padding-right: 48px;
 }
 /*# sourceMappingURL=style.css.map */
