@@ -37,7 +37,8 @@ body {
                 top: 49px;
                 width: 232px;
                 padding: 34px;
-                box-sizing: border-box;    
+                box-sizing: border-box; 
+                display: none;   
                 
                 .navigation_header {
                     font-size: 14px;
@@ -454,5 +455,89 @@ body {
                 }
             }
         }
+    }
+}
+
+.main {
+    .main_banner_content {
+        background: #F8F3F4;
+
+        .main_banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .main_header {
+                font-size: 24px;
+                line-height: 29px;
+                color: $highlight-color;
+                padding: 60px 0;
+    
+    
+            }
+    
+            .main_header_menu {
+                display: flex;
+                align-items: flex-start;
+                font-size: 14px;
+                line-height: 17px;
+                color: #636363;
+    
+                .main_text {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+    
+                }
+    
+                .slash {
+                    padding-left: 6px;
+                    padding-right: 6px;
+                }
+    
+                .new_arrivals {
+                    color: $highlight-color;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .main_menu {
+        display: flex;
+        justify-content: space-between;
+        
+        .main_menu_text {
+            .main_button {
+                border: none;
+                background: none;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                width: 70px;
+                height: 17px;
+    
+            }
+        }
+
+        .main_menu_content {
+            .main_button_menu {
+                border: none;
+                background: none;
+            }
+    
+            .main_heading {
+                padding-left: 48px;
+                padding-right: 48px;
+            }
+        }
+
+        
+        
+        
+
+
     }
 }
