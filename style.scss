@@ -687,20 +687,39 @@ body {
         .push_button {
             display: flex;
             justify-content: center;
-            padding-bottom: 65px;    
+            padding-bottom: 65px; 
+            
+            .add_to_cart_button_text {
+                padding-right: 57px;
+            }
 
             .add_to_cart {
-                padding: 16px 38px;
+                padding: 16px 0;
                 font-size: 16px;
                 line-height: 19px;
                 border: 1px solid $highlight-color;
                 color: $highlight-color;
                 text-decoration: none;
+                display: flex;
+                align-items: center;
+                padding-left: 24px;
+
+                svg {
+                    margin-right: 24px;
+                }
         
                 &:hover {
                     background-color: $highlight-color;
                     color: white;
+                    svg {
+                        path {
+                            fill: white;
+                        }
+                    }
+
+                        
                 }
+                
             }
         }
 
