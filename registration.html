@@ -89,38 +89,62 @@
                 <div class="main_form_registration">
                     <span class="main_form_title">Your Name</span>
                 </div>
-                <input id="name" class="registration_form_field" type="text" required placeholder="First Name">
-                <input class="registration_form_field" type="text" required placeholder="Last Name">
-
-                <div class="registration_loyality">
-                    <span class="loyality_system">LOYALTY HAS ITS PERKS</span>
+                <input class="registration_form_field" name="first_name" type="text" required placeholder="First Name">
+                <input class="registration_form_field" name="last_name" type="text" required placeholder="Last Name">
+                <div class="main_gender">
+                    <label><input class="main_gender_item" name="gender" type="radio" value="male">Male</label>
+                    <label><input class="main_gender_item female" name="gender" type="radio"
+                            value="female">Female</label>
                 </div>
-
+                <div class="main_form_registration">
+                    <span class="main_form_title">Login details</span>
+                </div>
+                <input class="registration_form_field" name="email" type="email" required placeholder="Email">
+                <input class="registration_form_field" name="password" type="password" required placeholder="Password">
+                <div class="form_field_text">
+                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    letters
+                </div>
+                <button class="main_join_now" type="button">
+                    JOIN NOW
+                    <img class="form_img" src="img/white arrow.svg" alt="#">
+                </button>
             </form>
+
+            <div class="registration_loyalty">
+                <h2 class="loyalty_system">LOYALTY HAS ITS PERKS</h2>
+                <p class="paragraph_loyalty">
+                    Get in on the loyalty program where you can earn points and<br> unlock serious perks. Starting with
+                    these as soon as you join:
+                </p>
+                <ul class="registration_item_content">
+                    <li class="registration_item">
+                        <img class="registration_check" src="img/check_mark.svg" alt="#">
+                        15% off welcome offer
+                    </li>
+                    <li class="registration_item">
+                        <img class="registration_check" src="img/check_mark.svg" alt="#">
+                        Free shipping, returns and exchanges on all orders
+                    </li>
+                    <li class="registration_item">
+                        <img class="registration_check" src="img/check_mark.svg" alt="#">
+                        $10 off a purchase on your birthday
+                    </li>
+                    <li class="registration_item">
+                        <img class="registration_check" src="img/check_mark.svg" alt="#">
+                        Early access to products
+                    </li>
+                    <li class="registration_item_block">
+                        <img class="registration_check" src="img/check_mark.svg" alt="#">
+                        Exclusive offers & rewards
+                    </li>
+                </ul>
+            </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
     <footer>
-        <div class="footer_subscription product">
+        <div class="footer_subscription registration_form">
             <div class="container footer_subscription_container">
                 <div class="footer_contact">
                     <img class="footer_contact_person" src="img/contact_person.png" alt="photo">
