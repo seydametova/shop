@@ -283,7 +283,7 @@ body {
     }
 }
 
-.footer {
+.footer_content {
     background: #222224;
     width: 100%;
 
@@ -339,9 +339,13 @@ body {
     height: 448px;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    
+
+    .footer_subscription_container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
 
     .footer_contact_person {
         padding-top: 86px;
@@ -725,8 +729,222 @@ body {
 
     }
 
+
+    .main_card {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 96px;
+
+        .main_card_position {
+            display: flex;
+            flex-direction: column;
+
+            .main_card_content {
+                flex-grow: 1;
+
+                .main_indent {
+                    margin-top: 40px;
+                }
+    
+                .main_card_block {
+                    display: flex;
+                    box-shadow: 0.9em 0.9em 20px rgba(122,122,122,0.3);
+
+                    
+
+                    .block_image {
+                        flex-shrink: 0;
+                        width: 262px;
+                        height: 306px;
+                    }
+    
+                    .main_text_card {
+                        flex-grow: 1;
+                        padding: 22px 31px;
+                        
+    
+                        .main_position {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            
+                            
+    
+                            .main_text_content {
+                                font-size: 24px;
+                                line-height: 29px;
+                                color: #222222;
+                                padding-bottom: 42px;
+                                width: 262px;
+                            }
+    
+                            .main_img {
+                                width: 18px;
+                                height: 18px;
+                                padding-left: 57px;
+                                
+                            }
+                        }
+    
+                        .main_list_card {
+                            padding-bottom: 6px;
+                            color: #575757;
+    
+                            .money {
+                                color: $highlight-color;
+                            }
+    
+                            .red {
+                                color: #575757;
+                            }
+    
+                            .size {
+                                color: #575757;
+                            }
+    
+                            .quantity {
+                                border: 1px solid #EAEAEA;
+                                padding: 0 15px;
+                                margin-left: 25px;
+                                color: #575757
+                            }
+                        }                  
+                    }
+                }
+            }
+            
+            .main_button_card {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 72px;
+
+                .clear_shopping {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                    border: 1px solid #A4A4A4;
+                    background: none;
+                    padding: 16px 40px;
+                    font-family: 'Lato'; 
+                }
+
+                .continue_shopping {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                    border: 1px solid #A4A4A4;
+                    background: none;
+                    padding: 16px 40px;
+                    font-family: 'Lato'; 
+                }
+            }
+        }
+
+        .cart_form {
+            width: 360px;
+            margin-left: 128px;
+            flex-shrink: 0;
+            
+
+            .cart_form_title {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+                padding-top: 10px;
+            }
+
+            .card_form_field {
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #222222;
+                display: block;
+                width: 100%;
+                margin-top: 20px;
+                padding: 12px 16px;
+                border: 1px solid #A4A4A4;
+                font-family: 'Lato';
+                outline: none;
+                box-sizing: border-box;
+                &::placeholder {
+                    color: #B1B1B1;
+                }
+            }
+
+            .get_quote {
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                border: 1px solid #A4A4A4;
+                background: none;
+                padding: 10px 14px;
+                margin-top: 24px;
+                font-family: 'Lato'; 
+            }
+        }
+
+        .card_form_background {
+            background: #F5F3F3;
+            padding: 44px;
+            margin-top: 70px;
+            
+
+            .sub_total_sum {
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 12px;
+
+                .sub_total {
+                    padding-right: 30px;
+                    font-weight: 400;
+                }
+            }
+
+            .grand_total_sum {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+                display: flex;
+                justify-content: flex-end;
+                
+                .sum_total {
+                    font-weight: 700;
+                    color: $highlight-color;
+                    padding-left: 34px;
+                }
+            }
+            
+            .card_grey_line {
+                background: #E2E2E2;
+                height: 1px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .proceed_checkout {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                border: none;
+                font-family: 'Lato'; 
+                padding: 16px 42px;
+                background: #F16D7F;
+                width: 100%;
+            }
+        }
+    }    
 }
+
 
 .product {
     margin-top: 128px;
 }
+
