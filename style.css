@@ -1130,7 +1130,6 @@ body {
 
 .main .main_card .card_form_background .proceed_checkout {
   font-weight: 300;
-  font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
   border: none;
@@ -1140,7 +1139,17 @@ body {
   width: 100%;
 }
 
-.main .main_registration {
+.main .registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 64px;
+}
+
+.main .registration .main_registration {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1151,10 +1160,9 @@ body {
   width: 360px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-top: 64px;
 }
 
-.main .main_registration .main_registration {
+.main .registration .main_registration .main_form_registration {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1162,7 +1170,7 @@ body {
   font-family: 'Lato';
 }
 
-.main .main_registration .registration_form_field {
+.main .registration .main_registration .registration_form_field {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
@@ -1177,23 +1185,92 @@ body {
           box-sizing: border-box;
 }
 
-.main .main_registration .registration_form_field::-webkit-input-placeholder {
+.main .registration .main_registration .registration_form_field::-webkit-input-placeholder {
   color: #B1B1B1;
 }
 
-.main .main_registration .registration_form_field:-ms-input-placeholder {
+.main .registration .main_registration .registration_form_field:-ms-input-placeholder {
   color: #B1B1B1;
 }
 
-.main .main_registration .registration_form_field::-ms-input-placeholder {
+.main .registration .main_registration .registration_form_field::-ms-input-placeholder {
   color: #B1B1B1;
 }
 
-.main .main_registration .registration_form_field::placeholder {
+.main .registration .main_registration .registration_form_field::placeholder {
   color: #B1B1B1;
+}
+
+.main .registration .main_registration .main_gender_item {
+  margin-right: 10px;
+}
+
+.main .registration .main_registration .female {
+  margin-left: 20px;
+}
+
+.main .registration .main_registration .main_gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.main .registration .main_registration .form_field_text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 16px;
+}
+
+.main .registration .main_registration .main_join_now {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: 'Lato';
+  background: #F16D7F;
+  border: none;
+  width: 167px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.main .registration .main_registration .main_join_now .form_img {
+  padding-left: 20px;
+}
+
+.main .registration .registration_loyalty {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.main .registration .registration_loyalty .paragraph_loyalty {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main .registration .registration_loyalty .registration_item {
+  padding-bottom: 16px;
+}
+
+.main .registration .registration_loyalty .registration_check {
+  padding-right: 23px;
 }
 
 .product {
   margin-top: 128px;
+}
+
+.registration_form {
+  margin-top: 96px;
 }
 /*# sourceMappingURL=style.css.map */
