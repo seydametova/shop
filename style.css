@@ -651,6 +651,82 @@ body {
   color: #000000;
   width: 70px;
   height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main_menu .main_menu_text .main_button .filter_img {
+  width: 15px;
+  height: 10px;
+  padding-left: 11px;
+  padding-top: 3px;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter {
+  display: block;
+  position: absolute;
+  list-style-type: none;
+  color: #6F6E6E;
+  width: 360px;
+  z-index: 1;
+  background: white;
+  padding: 16px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter .filter_heading_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter .filter_heading_text .main_filter_heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #EF5B70;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter .filter_heading_text .filter_img_heading {
+  padding-right: 290px;
+  padding-left: 11px;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter .main_menu_summary {
+  cursor: pointer;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter .main_menu_summary {
+  display: block;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 5px solid #EF5B70;
+  padding: 10px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter .main_filter_list {
+  list-style-type: none;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter .main_filter_list .main_category {
+  padding-bottom: 10px;
+}
+
+.main .main_menu .main_menu_text .main_menu_filter .main_filter_list .main_category_link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main .main_menu .main_menu_content .main_button_menu {
