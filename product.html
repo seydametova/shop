@@ -13,11 +13,9 @@
         rel="stylesheet">
 </head>
 
-<!-- Анимировать выпадающее меню -->
-<!-- Анимация корзины (при попадании товара в корзину в значке появится круг с кол-вом товаров в корзине) -->
 <!-- При наведении на элементы в меню - увеличиваются в размере; 
     При наведении на три сегмента в подвале - увеличиваются в размере вместе с текстом -->
-<!-- подключить остальные страницы -->
+<!-- Add to Cart подсветить -->
 <!-- Адаптация страницы в планшетной и телефонной версии -->
 
 <body>
@@ -25,53 +23,25 @@
         <div class="header_content">
             <div class="header_menu container">
                 <ul class="header_item">
-                    <li class="header_menu_item" href="#"><img src="img/corporate_logo.svg" alt="logo"></li>
-                    <li class="header_menu_item" href="#"><img src="img/magnifier.svg" alt="search"></li>
+                    <li class="header_menu_item">
+                        <a href="index.html"><img src="img/corporate_logo.svg" alt="logo"></a>
+                    </li>
+                    <li class="header_menu_item">
+                        <a href="#"><img src="img/magnifier.svg" alt="search"></a>
+                    </li>
                 </ul>
                 <ul class="header_item">
-                    <li class="header_menu_item" href="#">
-                        <img src="img/sandwich.svg" alt="menu">
-                        <div class="site_navigation">
-                            <h3 class="navigation_header">MENU</h3>
-
-                            <nav>
-                                <ul class="site_navigation_list">
-                                    <li class="site_navigation_list_group">
-                                        <a class="group_link" href="#">MAN</a>
-                                        <ul>
-                                            <li class="link_menu"><a href="#">Accessories</a></li>
-                                            <li class="link_menu"><a href="#">Bags</a></li>
-                                            <li class="link_menu"><a href="#">Denim</a></li>
-                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="site_navigation_list_group">
-                                        <a class="group_link" href="#">WOMAN</a>
-                                        <ul>
-                                            <li class="link_menu"><a href="#">Accessories</a></li>
-                                            <li class="link_menu"><a href="#">Jackets & Coats</a></li>
-                                            <li class="link_menu"><a href="#">Polos</a></li>
-                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
-                                            <li class="link_menu"><a href="#">Shirts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="site_navigation_list_group">
-                                        <a class="group_link" href="#">KIDS</a>
-                                        <ul>
-                                            <li class="link_menu"><a href="#">Accessories</a></li>
-                                            <li class="link_menu"><a href="#">Jackets & Coats</a></li>
-                                            <li class="link_menu"><a href="#">Polos</a></li>
-                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
-                                            <li class="link_menu"><a href="#">Shirts</a></li>
-                                            <li class="link_menu"><a href="#">Bags</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+                    <li class="header_menu_item">
+                        <button type="button" onclick="toggleMenu()" class="menu-button">
+                            <img src="img/sandwich.svg" alt="menu">
+                        </button>
                     </li>
-                    <li class="header_menu_item" href="#"><img src="img/my_profile.svg" alt="profile"></li>
-                    <li class="header_menu_item" href="#"><img src="img/basket.svg" alt="basket"></li>
+                    <li class="header_menu_item">
+                        <a href="registration.html"><img src="img/my_profile.svg" alt="profile"></a>
+                    </li>
+                    <li class="header_menu_item">
+                        <a href="cart.html"><img src="img/basket.svg" alt="basket"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -88,7 +58,7 @@
                         <h2>HOME </h2>
                     </a>
                     <span class="slash">/</span>
-                    <a href="#" class="main_text">
+                    <a href="catalog.html" class="main_text">
                         <h2>MEN </h2>
                     </a>
                     <span class="slash">/</span>
@@ -130,9 +100,90 @@
             <p class="main_sum">$561</p>
             <div class="main_line_grey"></div>
 
-            <!-- Стрeлок в выпадающем меню нет -->
-
             <div class="main_menu_item container">
+                <ul class="main_menu_top_item">
+                    <li class="main_button_link">
+                        <span>CHOOSE COLOR</span>
+                        <img class="main_image" src="img/size.svg" alt="#">
+                    </li>
+
+                    <li class="main_button_link size_content">
+                        <div class="button_main">
+                            <span class="main_heading_link">CHOOSE SIZE </span>
+                            <img class="main_image" src="img/size.svg" alt="#">
+                        </div>
+
+                        <ul class="submenu_button">
+                            <li class="button_size">
+                                <input type="checkbox" class="size_button_main" id="xs"><label class="label_item"
+                                    for="xs">XS</label>
+                            </li>
+                            <li class="button_size">
+                                <input type="checkbox" class="size_button_main" id="s"><label class="label_item"
+                                    for="s">S</label>
+                            </li>
+                            <li class="button_size">
+                                <input type="checkbox" class="size_button_main" id="m"><label class="label_item"
+                                    for="m">M</label>
+                            </li>
+                            <li class="button_size">
+                                <input type="checkbox" class="size_button_main" id="l"><label class="label_item"
+                                    for="l">L</label>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="main_button_link">
+                        <span class="main_link">QUANTITY</span>
+                        <img class="main_image" src="img/size.svg" alt="#">
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="main_menu_content">
+                <ul class="main_top_menu">
+                    <li class="main_button_menu">
+                        <span>TRENDING NOW</span>
+                        <img class="main_button_image" src="img/size.svg" alt="#">
+                    </li>
+
+                    <li class="main_button_menu size_item">
+                        <div class="main_button_top">
+                            <span class="main_size_item">SIZE</span>
+                            <img class="main_button_image" src="img/size.svg" alt="#">
+                        </div>
+
+                        <ul class="main_button_submenu">
+                            <li class="main_list_size">
+                                <input type="checkbox" class="main_input" id="xs"><label class="main_size"
+                                    for="xs">XS</label>
+                            </li>
+                            <li class="main_list_size">
+                                <input type="checkbox" class="main_input" id="s"><label class="main_size"
+                                    for="s">S</label>
+                            </li>
+                            <li class="main_list_size">
+                                <input type="checkbox" class="main_input" id="m"><label class="main_size"
+                                    for="m">M</label>
+                            </li>
+                            <li class="main_list_size">
+                                <input type="checkbox" class="main_input" id="l"><label class="main_size"
+                                    for="l">L</label>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="main_button_menu">
+                        <span>PRICE</span>
+                        <img class="main_button_image" src="img/size.svg" alt="#">
+                    </li>
+                </ul>
+            </div> -->
+
+
+
+
+            <!-- <div class="main_menu_item container">
                 <button class="main_button_link">
                     <h2>CHOOSE COLOR</h2>
                 </button>
@@ -142,7 +193,7 @@
                 <button class="main_button_link">
                     <h2>QUANTITY</h2>
                 </button>
-            </div>
+            </div> -->
 
             <div class="push_button container">
                 <div class="push_item">
@@ -160,7 +211,7 @@
 
         <div class="card container">
             <div class="card_block">
-                <a href="#" class="card_content">
+                <a href="product.html" class="card_content">
                     <div class="image_container">
                         <img class="сard_product" src="img/4.png" alt="product">
                         <div class="add_to_cart_container">
@@ -179,7 +230,7 @@
                         <p class="card_value">$52.00</p>
                     </div>
                 </a>
-                <a href="#" class="card_content">
+                <a href="product.html" class="card_content">
                     <div class="image_container">
                         <img class="сard_product" src="img/3.png" alt="product">
                         <div class="add_to_cart_container">
@@ -199,7 +250,7 @@
                         <p class="card_value">$52.00</p>
                     </div>
                 </a>
-                <a href="#" class="card_content">
+                <a href="product.html" class="card_content">
                     <div class="image_container">
                         <img class="сard_product" src="img/6.png" alt="product">
                         <div class="add_to_cart_container">
@@ -295,9 +346,62 @@
         </div>
     </footer>
 
+    <div class="site_navigation" id="navigation_menu">
+        <div class="menu-header">
+            <button type="button" class="header_close_button" onclick="closeMenu()">
+                <img class="header_img" src="img/x.svg" alt="photo">
+            </button>
+        </div>
 
+        <h3 class="navigation_header">MENU</h3>
 
+        <nav>
+            <ul class="site_navigation_list">
+                <li class="site_navigation_list_group">
+                    <a class="group_link" href="catalog.html">MAN</a>
+                    <ul>
+                        <li class="link_menu"><a href="catalog.html">Accessories</a></li>
+                        <li class="link_menu"><a href="catalog.html">Bags</a></li>
+                        <li class="link_menu"><a href="catalog.html">Denim</a></li>
+                        <li class="link_menu"><a href="catalog.html">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li class="site_navigation_list_group">
+                    <a class="group_link" href="catalog.html">WOMAN</a>
+                    <ul>
+                        <li class="link_menu"><a href="catalog.html">Accessories</a></li>
+                        <li class="link_menu"><a href="catalog.html">Jackets & Coats</a></li>
+                        <li class="link_menu"><a href="catalog.html">Polos</a></li>
+                        <li class="link_menu"><a href="catalog.html">T-Shirts</a></li>
+                        <li class="link_menu"><a href="catalog.html">Shirts</a></li>
+                    </ul>
+                </li>
+                <li class="site_navigation_list_group">
+                    <a class="group_link" href="catalog.html">KIDS</a>
+                    <ul>
+                        <li class="link_menu"><a href="catalog.html">Accessories</a></li>
+                        <li class="link_menu"><a href="catalog.html">Jackets & Coats</a></li>
+                        <li class="link_menu"><a href="catalog.html">Polos</a></li>
+                        <li class="link_menu"><a href="catalog.html">T-Shirts</a></li>
+                        <li class="link_menu"><a href="catalog.html">Shirts</a></li>
+                        <li class="link_menu"><a href="catalog.html">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navigation_menu");
+            menu.classList.toggle("shown");
+        }
+
+        function closeMenu() {
+            var menu = document.getElementById("navigation_menu");
+            menu.classList.remove("shown")
+        }
+    </script>
 
 </body>
 

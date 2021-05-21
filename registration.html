@@ -13,11 +13,8 @@
         rel="stylesheet">
 </head>
 
-<!-- Анимировать выпадающее меню -->
-<!-- Анимация корзины (при попадании товара в корзину в значке появится круг с кол-вом товаров в корзине) -->
 <!-- При наведении на элементы в меню - увеличиваются в размере; 
     При наведении на три сегмента в подвале - увеличиваются в размере вместе с текстом -->
-<!-- подключить остальные страницы -->
 <!-- Адаптация страницы в планшетной и телефонной версии -->
 
 <body>
@@ -25,53 +22,25 @@
         <div class="header_content">
             <div class="header_menu container">
                 <ul class="header_item">
-                    <li class="header_menu_item" href="#"><img src="img/corporate_logo.svg" alt="logo"></li>
-                    <li class="header_menu_item" href="#"><img src="img/magnifier.svg" alt="search"></li>
+                    <li class="header_menu_item">
+                        <a href="index.html"><img src="img/corporate_logo.svg" alt="logo"></a>
+                    </li>
+                    <li class="header_menu_item">
+                        <a href="#"><img src="img/magnifier.svg" alt="search"></a>
+                    </li>
                 </ul>
                 <ul class="header_item">
-                    <li class="header_menu_item" href="#">
-                        <img src="img/sandwich.svg" alt="menu">
-                        <div class="site_navigation">
-                            <h3 class="navigation_header">MENU</h3>
-
-                            <nav>
-                                <ul class="site_navigation_list">
-                                    <li class="site_navigation_list_group">
-                                        <a class="group_link" href="#">MAN</a>
-                                        <ul>
-                                            <li class="link_menu"><a href="#">Accessories</a></li>
-                                            <li class="link_menu"><a href="#">Bags</a></li>
-                                            <li class="link_menu"><a href="#">Denim</a></li>
-                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="site_navigation_list_group">
-                                        <a class="group_link" href="#">WOMAN</a>
-                                        <ul>
-                                            <li class="link_menu"><a href="#">Accessories</a></li>
-                                            <li class="link_menu"><a href="#">Jackets & Coats</a></li>
-                                            <li class="link_menu"><a href="#">Polos</a></li>
-                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
-                                            <li class="link_menu"><a href="#">Shirts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="site_navigation_list_group">
-                                        <a class="group_link" href="#">KIDS</a>
-                                        <ul>
-                                            <li class="link_menu"><a href="#">Accessories</a></li>
-                                            <li class="link_menu"><a href="#">Jackets & Coats</a></li>
-                                            <li class="link_menu"><a href="#">Polos</a></li>
-                                            <li class="link_menu"><a href="#">T-Shirts</a></li>
-                                            <li class="link_menu"><a href="#">Shirts</a></li>
-                                            <li class="link_menu"><a href="#">Bags</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+                    <li class="header_menu_item">
+                        <button type="button" onclick="toggleMenu()" class="menu-button">
+                            <img src="img/sandwich.svg" alt="menu">
+                        </button>
                     </li>
-                    <li class="header_menu_item" href="#"><img src="img/my_profile.svg" alt="profile"></li>
-                    <li class="header_menu_item" href="#"><img src="img/basket.svg" alt="basket"></li>
+                    <li class="header_menu_item">
+                        <a href="#"><img src="img/my_profile.svg" alt="profile"></a>
+                    </li>
+                    <li class="header_menu_item">
+                        <a href="cart.html"><img src="img/basket.svg" alt="basket"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -214,6 +183,63 @@
             </div>
         </div>
     </footer>
+
+    <div class="site_navigation" id="navigation_menu">
+        <div class="menu-header">
+            <button type="button" class="header_close_button" onclick="closeMenu()">
+                <img class="header_img" src="img/x.svg" alt="photo">
+            </button>
+        </div>
+
+        <h3 class="navigation_header">MENU</h3>
+
+        <nav>
+            <ul class="site_navigation_list">
+                <li class="site_navigation_list_group">
+                    <a class="group_link" href="catalog.html">MAN</a>
+                    <ul>
+                        <li class="link_menu"><a href="catalog.html">Accessories</a></li>
+                        <li class="link_menu"><a href="catalog.html">Bags</a></li>
+                        <li class="link_menu"><a href="catalog.html">Denim</a></li>
+                        <li class="link_menu"><a href="catalog.html">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li class="site_navigation_list_group">
+                    <a class="group_link" href="catalog.html">WOMAN</a>
+                    <ul>
+                        <li class="link_menu"><a href="catalog.html">Accessories</a></li>
+                        <li class="link_menu"><a href="catalog.html">Jackets & Coats</a></li>
+                        <li class="link_menu"><a href="catalog.html">Polos</a></li>
+                        <li class="link_menu"><a href="catalog.html">T-Shirts</a></li>
+                        <li class="link_menu"><a href="catalog.html">Shirts</a></li>
+                    </ul>
+                </li>
+                <li class="site_navigation_list_group">
+                    <a class="group_link" href="catalog.html">KIDS</a>
+                    <ul>
+                        <li class="link_menu"><a href="catalog.html">Accessories</a></li>
+                        <li class="link_menu"><a href="catalog.html">Jackets & Coats</a></li>
+                        <li class="link_menu"><a href="catalog.html">Polos</a></li>
+                        <li class="link_menu"><a href="catalog.html">T-Shirts</a></li>
+                        <li class="link_menu"><a href="catalog.html">Shirts</a></li>
+                        <li class="link_menu"><a href="catalog.html">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navigation_menu");
+            menu.classList.toggle("shown");
+        }
+
+        function closeMenu() {
+            var menu = document.getElementById("navigation_menu");
+            menu.classList.remove("shown")
+        }
+    </script>
 
 </body>
 
