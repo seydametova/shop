@@ -13,12 +13,7 @@
         rel="stylesheet">
 </head>
 
-<!-- Анимировать выпадающее меню -->
-<!-- И выпадающее меню в Фильтрах с выбором размеров -->
-<!-- При наведении на элементы в меню - увеличиваются в размере; 
-    При наведении на три сегмента в подвале - увеличиваются в размере вместе с текстом -->
 <!-- Add to Cart подсветить -->
-
 
 <body>
     <header class="navigation">
@@ -26,23 +21,23 @@
             <div class="header_menu container">
                 <ul class="header_item">
                     <li class="header_menu_item">
-                        <a href="index.html"><img src="img/corporate_logo.svg" alt="logo"></a>
+                        <a href="index.html"><img class="logo" src="img/corporate_logo.svg" alt="logo"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="#"><img src="img/magnifier.svg" alt="search"></a>
+                        <a href="#"><img class="logo" src="img/magnifier.svg" alt="search"></a>
                     </li>
                 </ul>
                 <ul class="header_item">
                     <li class="header_menu_item">
                         <button type="button" onclick="toggleMenu()" class="menu-button">
-                            <img src="img/sandwich.svg" alt="menu">
+                            <img class="logo" src="img/sandwich.svg" alt="menu">
                         </button>
                     </li>
                     <li class="header_menu_item">
-                        <a href="registration.html"><img src="img/my_profile.svg" alt="profile"></a>
+                        <a href="registration.html"><img class="logo" src="img/my_profile.svg" alt="profile"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="cart.html"><img src="img/basket.svg" alt="basket"></a>
+                        <a href="cart.html"><img class="logo" src="img/basket.svg" alt="basket"></a>
                     </li>
                 </ul>
             </div>
@@ -72,92 +67,99 @@
         <nav class="main_menu container">
             <div class="main_menu_text">
                 <div class="main_filter_button">
-                    <button class="main_button">
-                        <h2>FILTER</h2>
-                        <img class="filter_img" src="img/filter black.svg" alt="#">
-                    </button>
-                </div>
-                <ul class="main_menu_filter">
-                    <div class="filter_heading_text">
-                        <li class="main_filter_heading">FILTER</li>
-                        <img class="filter_img_heading" src="img/filter pink.svg" alt="#">
+                    <div class="item_menu">
+                        <button class="main_button">
+                            <h2>FILTER</h2>
+                            <img class="filter_img" src="img/filter black.svg" alt="#">
+                        </button>
+                        <ul class="main_menu_filter">
+                            <div class="filter_heading_text">
+                                <li class="main_filter_heading">FILTER</li>
+                                <img class="filter_img_heading" src="img/filter pink.svg" alt="#">
+                            </div>
+                            <li class="main_filter_item">
+                                <details>
+                                    <summary class="main_menu_summary">CATEGORY</summary>
+                                    <ul class="main_filter_list">
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Accessories</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Bags</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Denim</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Hoodies & Sweatshirts</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Jackets & Coats</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Polos</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Shirts</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Shoes</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">Sweaters & Knits</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a class="main_category_link" href="#">T-Shirts</a>
+                                        </li>
+                                        <li class="main_category_padding">
+                                            <a class="main_category_link" href="#">Tanks</a>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li class="main_filter_item">
+                                <details>
+                                    <summary class="main_menu_summary">BRAND</summary>
+                                    <ul class="main_filter_list">
+                                        <li class="main_category">
+                                            <a href="#" class="main_category_link">Pull&Bear</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a href="#" class="main_category_link">Guess</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a href="#" class="main_category_link">Bershka</a>
+                                        </li>
+                                        <li class="main_category">
+                                            <a href="#" class="main_category_link">Mango</a>
+                                        </li>
+                                        <li class="main_category_padding">
+                                            <a href="#" class="main_category_link">Stradivarius</a>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="main_filter_item">
+                                <details>
+                                    <summary class="main_menu_summary">DESIGNER</summary>
+                                    <ul class="main_filter_list">
+                                        <li class="main_category"><a href="#" class="main_category_link">Desinger</a>
+                                        </li>
+                                        <li class="main_category"><a href="#" class="main_category_link">Desinger</a>
+                                        </li>
+                                        <li class="main_category_padding"><a href="#"
+                                                class="main_category_link">Desinger</a>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                        </ul>
                     </div>
-                    <li class="main_filter_item">
-                        <details>
-                            <summary class="main_menu_summary">CATEGORY</summary>
-                            <ul class="main_filter_list">
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Accessories</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Bags</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Denim</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Hoodies & Sweatshirts</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Jackets & Coats</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Polos</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Shirts</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Shoes</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">Sweaters & Knits</a>
-                                </li>
-                                <li class="main_category">
-                                    <a class="main_category_link" href="#">T-Shirts</a>
-                                </li>
-                                <li class="main_category_padding">
-                                    <a class="main_category_link" href="#">Tanks</a>
-                                </li>
-                            </ul>
-                        </details>
-                    </li>
 
-                    <li class="main_filter_item">
-                        <details>
-                            <summary class="main_menu_summary">BRAND</summary>
-                            <ul class="main_filter_list">
-                                <li class="main_category">
-                                    <a href="#" class="main_category_link">Pull&Bear</a>
-                                </li>
-                                <li class="main_category">
-                                    <a href="#" class="main_category_link">Guess</a>
-                                </li>
-                                <li class="main_category">
-                                    <a href="#" class="main_category_link">Bershka</a>
-                                </li>
-                                <li class="main_category">
-                                    <a href="#" class="main_category_link">Mango</a>
-                                </li>
-                                <li class="main_category_padding">
-                                    <a href="#" class="main_category_link">Stradivarius</a>
-                                </li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li class="main_filter_item">
-                        <details>
-                            <summary class="main_menu_summary">DESIGNER</summary>
-                            <ul class="main_filter_list">
-                                <li class="main_category"><a href="#" class="main_category_link">Desinger</a></li>
-                                <li class="main_category"><a href="#" class="main_category_link">Desinger</a></li>
-                                <li class="main_category_padding"><a href="#" class="main_category_link">Desinger</a>
-                                </li>
-                            </ul>
-                        </details>
-                    </li>
+                </div>
 
-                </ul>
             </div>
 
             <div class="main_menu_content">
@@ -409,8 +411,8 @@
     <footer>
         <div class="footer_content">
             <div class="footer_block container">
-                <div class="footer_info">
-                    <a class="footer_link" href="">
+                <div class="footer_info logo">
+                    <a class="footer_link" href="#">
                         <img class="footer_info_content" src="img/delivery.svg" alt="photo">
                         <h2 class="footer_item">Free Delivery</h2>
                         <p class="footer_paragraph_content">
@@ -420,8 +422,8 @@
                         </p>
                     </a>
                 </div>
-                <div class="footer_info_block">
-                    <a class="footer_link" href="">
+                <div class="footer_info_block logo">
+                    <a class="footer_link" href="#">
                         <img class="footer_picture" src="img/discounts.svg" alt="photo">
                         <h2 class="footer_item">Sales & discounts</h2>
                         <p class="footer_paragraph_content">
@@ -431,8 +433,8 @@
                         </p>
                     </a>
                 </div>
-                <div class="footer_info">
-                    <a class="footer_link" href="">
+                <div class="footer_info logo">
+                    <a class="footer_link" href="#">
                         <img class="footer_illustration" src="img/quality_assurance.svg" alt="photo">
                         <h2 class="footer_item">Quality assurance</h2>
                         <p class="footer_paragraph_content">

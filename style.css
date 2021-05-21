@@ -101,6 +101,15 @@ body {
   cursor: pointer;
 }
 
+.logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
 .site_navigation {
   background: #FFFFFF;
   position: absolute;
@@ -360,6 +369,11 @@ body {
 
 .card .card_block .card_content .image_container .add_to_cart_container .add_to_cart_button .button_text {
   margin-left: 12px;
+}
+
+.card .card_block .card_content .image_container .add_to_cart_container .add_to_cart_button:hover {
+  -webkit-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
 }
 
 .card .card_block .card_content .card_info {
@@ -689,7 +703,12 @@ body {
   width: 360px;
 }
 
-.main .main_menu .main_menu_text .main_filter_button .main_button {
+.main .main_menu .main_menu_text .main_filter_button .item_menu {
+  position: relative;
+  display: inline-block;
+}
+
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_button {
   border: none;
   background: none;
   font-weight: 600;
@@ -705,16 +724,17 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: 'Lato';
+  position: relative;
 }
 
-.main .main_menu .main_menu_text .main_filter_button .main_button .filter_img {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_button .filter_img {
   width: 15px;
   height: 10px;
   padding-left: 11px;
   padding-top: 3px;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter {
   display: block;
   position: absolute;
   list-style-type: none;
@@ -729,9 +749,16 @@ body {
   line-height: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  top: -15px;
+  left: -10px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  cursor: pointer;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter .filter_heading_text {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter .filter_heading_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,22 +767,22 @@ body {
           justify-content: space-between;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter .filter_heading_text .main_filter_heading {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter .filter_heading_text .main_filter_heading {
   font-size: 14px;
   font-weight: 600;
   color: #F16D7F;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter .filter_heading_text .filter_img_heading {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter .filter_heading_text .filter_img_heading {
   padding-right: 290px;
   padding-left: 11px;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter .main_menu_summary {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter .main_menu_summary {
   cursor: pointer;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter .main_menu_summary {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter .main_menu_summary {
   display: block;
   border-bottom: 1px solid #ebebeb;
   border-left: 5px solid #F16D7F;
@@ -764,19 +791,24 @@ body {
   font-size: 14px;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter .main_filter_list {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter .main_filter_list {
   list-style-type: none;
   padding-top: 16px;
   padding-left: 16px;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter .main_filter_list .main_category {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter .main_filter_list .main_category {
   padding-bottom: 10px;
 }
 
-.main .main_menu .main_menu_text .main_menu_filter .main_filter_list .main_category_link {
+.main .main_menu .main_menu_text .main_filter_button .item_menu .main_menu_filter .main_filter_list .main_category_link {
   text-decoration: none;
   color: inherit;
+}
+
+.main .main_menu .main_menu_text .main_filter_button .item_menu:hover .main_menu_filter {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 .main .main_menu .main_menu_content {
@@ -916,10 +948,19 @@ body {
   height: 47px;
 }
 
-.main .main_product .main_content .main_arrow_content .main_arrow {
+.main .main_product .main_content .main_arrow_content .arrow_item {
   width: 13px;
   height: 22px;
   padding: 13px 17px;
+}
+
+.main .main_product .main_content .main_arrow_content .arrow_item .svg_rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.main .main_product .main_content .main_arrow_content .arrow_item:hover path {
+  fill: #F16D7F;
 }
 
 .main .main_product .main_content .main_content_item {
@@ -1159,6 +1200,10 @@ body {
           flex-direction: column;
 }
 
+.main .main_card .main_card_position .link_product {
+  text-decoration: none;
+}
+
 .main .main_card .main_card_position .main_card_content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1273,6 +1318,11 @@ body {
   font-family: 'Lato';
 }
 
+.main .main_card .main_card_position .main_button_card .clear_shopping:hover, .main .main_card .main_card_position .main_button_card .continue_shopping:hover {
+  background-color: #A4A4A4;
+  color: white;
+}
+
 .main .main_card .cart_form {
   width: 360px;
   margin-left: 128px;
@@ -1331,6 +1381,11 @@ body {
   font-family: 'Lato';
 }
 
+.main .main_card .cart_form .get_quote:hover {
+  background-color: #A4A4A4;
+  color: white;
+}
+
 .main .main_card .card_form_background {
   background: #F5F3F3;
   padding: 44px;
@@ -1384,12 +1439,17 @@ body {
 .main .main_card .card_form_background .proceed_checkout {
   font-weight: 300;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #fff;
   border: none;
   font-family: 'Lato';
   padding: 16px 42px;
-  background: #F16D7F;
+  background-color: #F16D7F;
   width: 100%;
+}
+
+.main .main_card .card_form_background .proceed_checkout:hover {
+  background-color: #E05C6E;
+  color: #fff;
 }
 
 .main .registration {
@@ -1497,6 +1557,10 @@ body {
 
 .main .registration .main_registration .main_join_now .form_img {
   padding-left: 20px;
+}
+
+.main .registration .main_registration .main_join_now:hover {
+  background: #E05C6E;
 }
 
 .main .registration .registration_loyalty {

@@ -13,8 +13,6 @@
         rel="stylesheet">
 </head>
 
-<!-- При наведении на элементы в меню - увеличиваются в размере; 
-    При наведении на три сегмента в подвале - увеличиваются в размере вместе с текстом -->
 <!-- Адаптация страницы в планшетной и телефонной версии -->
 
 <body>
@@ -23,23 +21,23 @@
             <div class="header_menu container">
                 <ul class="header_item">
                     <li class="header_menu_item">
-                        <a href="index.html"><img src="img/corporate_logo.svg" alt="logo"></a>
+                        <a href="index.html"><img class="logo" src="img/corporate_logo.svg" alt="logo"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="#"><img src="img/magnifier.svg" alt="search"></a>
+                        <a href="#"><img class="logo" src="img/magnifier.svg" alt="search"></a>
                     </li>
                 </ul>
                 <ul class="header_item">
                     <li class="header_menu_item">
                         <button type="button" onclick="toggleMenu()" class="menu-button">
-                            <img src="img/sandwich.svg" alt="menu">
+                            <img class="logo" src="img/sandwich.svg" alt="menu">
                         </button>
                     </li>
                     <li class="header_menu_item">
-                        <a href="#"><img src="img/my_profile.svg" alt="profile"></a>
+                        <a href="#"><img class="logo" src="img/my_profile.svg" alt="profile"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="cart.html"><img src="img/basket.svg" alt="basket"></a>
+                        <a href="cart.html"><img class="logo" src="img/basket.svg" alt="basket"></a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +72,7 @@
                     Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
                     letters
                 </div>
-                <button class="main_join_now" type="button">
+                <button class="main_join_now" type="submit">
                     JOIN NOW
                     <img class="form_img" src="img/white arrow.svg" alt="#">
                 </button>

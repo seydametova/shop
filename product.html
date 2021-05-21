@@ -13,8 +13,6 @@
         rel="stylesheet">
 </head>
 
-<!-- При наведении на элементы в меню - увеличиваются в размере; 
-    При наведении на три сегмента в подвале - увеличиваются в размере вместе с текстом -->
 <!-- Add to Cart подсветить -->
 <!-- Адаптация страницы в планшетной и телефонной версии -->
 
@@ -24,23 +22,23 @@
             <div class="header_menu container">
                 <ul class="header_item">
                     <li class="header_menu_item">
-                        <a href="index.html"><img src="img/corporate_logo.svg" alt="logo"></a>
+                        <a href="index.html"><img class="logo" src="img/corporate_logo.svg" alt="logo"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="#"><img src="img/magnifier.svg" alt="search"></a>
+                        <a href="#"><img class="logo" src="img/magnifier.svg" alt="search"></a>
                     </li>
                 </ul>
                 <ul class="header_item">
                     <li class="header_menu_item">
                         <button type="button" onclick="toggleMenu()" class="menu-button">
-                            <img src="img/sandwich.svg" alt="menu">
+                            <img class="logo" src="img/sandwich.svg" alt="menu">
                         </button>
                     </li>
                     <li class="header_menu_item">
-                        <a href="registration.html"><img src="img/my_profile.svg" alt="profile"></a>
+                        <a href="registration.html"><img class="logo" src="img/my_profile.svg" alt="profile"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="cart.html"><img src="img/basket.svg" alt="basket"></a>
+                        <a href="cart.html"><img class="logo" src="img/basket.svg" alt="basket"></a>
                     </li>
                 </ul>
             </div>
@@ -67,21 +65,28 @@
             </div>
         </div>
 
-        <!-- Анимация ссылок-стрелок при рассмотрении товара (по бокам ) -->
-
         <div class="main_product">
             <div class="main_content">
                 <div class="main_arrow_content">
-                    <a href="#">
-                        <img class="main_arrow" src="img/black_arrow.svg" alt="photo">
+                    <a href="#" class="arrow_item">
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z"
+                                fill="black" />
+                        </svg>
                     </a>
                 </div>
                 <div class="main_content_item container">
                     <img class="menu_item_product" src="img/product.png" alt="photo">
                 </div>
                 <div class="main_arrow_content">
-                    <a href="#">
-                        <img class="main_arrow" src="img/pink_arrow.svg" alt="photo">
+                    <a href="#" class="arrow_item">
+                        <svg class="svg_rotate" width="13" height="23" viewBox="0 0 13 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z"
+                                fill="black" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -139,61 +144,6 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- <div class="main_menu_content">
-                <ul class="main_top_menu">
-                    <li class="main_button_menu">
-                        <span>TRENDING NOW</span>
-                        <img class="main_button_image" src="img/size.svg" alt="#">
-                    </li>
-
-                    <li class="main_button_menu size_item">
-                        <div class="main_button_top">
-                            <span class="main_size_item">SIZE</span>
-                            <img class="main_button_image" src="img/size.svg" alt="#">
-                        </div>
-
-                        <ul class="main_button_submenu">
-                            <li class="main_list_size">
-                                <input type="checkbox" class="main_input" id="xs"><label class="main_size"
-                                    for="xs">XS</label>
-                            </li>
-                            <li class="main_list_size">
-                                <input type="checkbox" class="main_input" id="s"><label class="main_size"
-                                    for="s">S</label>
-                            </li>
-                            <li class="main_list_size">
-                                <input type="checkbox" class="main_input" id="m"><label class="main_size"
-                                    for="m">M</label>
-                            </li>
-                            <li class="main_list_size">
-                                <input type="checkbox" class="main_input" id="l"><label class="main_size"
-                                    for="l">L</label>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="main_button_menu">
-                        <span>PRICE</span>
-                        <img class="main_button_image" src="img/size.svg" alt="#">
-                    </li>
-                </ul>
-            </div> -->
-
-
-
-
-            <!-- <div class="main_menu_item container">
-                <button class="main_button_link">
-                    <h2>CHOOSE COLOR</h2>
-                </button>
-                <button class="main_button_link">
-                    <h2 class="main_heading_link">CHOOSE SIZE </h2>
-                </button>
-                <button class="main_button_link">
-                    <h2>QUANTITY</h2>
-                </button>
-            </div> -->
 
             <div class="push_button container">
                 <div class="push_item">

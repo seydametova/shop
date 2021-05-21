@@ -13,9 +13,6 @@
         rel="stylesheet">
 </head>
 
-<!-- Анимировать выпадающее меню -->
-<!-- При наведении на элементы в меню - увеличиваются в размере; 
-    При наведении на три сегмента в подвале - увеличиваются в размере вместе с текстом -->
 <!-- Add to Cart подсветить -->
 
 <body>
@@ -24,23 +21,23 @@
             <div class="header_menu container">
                 <ul class="header_item">
                     <li class="header_menu_item">
-                        <a href="#"><img src="img/corporate_logo.svg" alt="logo"></a>
+                        <a href="#"><img class="logo" src="img/corporate_logo.svg" alt="logo"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="#"><img src="img/magnifier.svg" alt="search"></a>
+                        <a href="#"><img class="logo" src="img/magnifier.svg" alt="search"></a>
                     </li>
                 </ul>
                 <ul class="header_item">
                     <li class="header_menu_item">
                         <button type="button" onclick="toggleMenu()" class="menu-button">
-                            <img src="img/sandwich.svg" alt="menu">
+                            <img class="logo" src="img/sandwich.svg" alt="menu">
                         </button>
                     </li>
                     <li class="header_menu_item">
-                        <a href="registration.html"><img src="img/my_profile.svg" alt="profile"></a>
+                        <a href="registration.html"><img class="logo" src="img/my_profile.svg" alt="profile"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="cart.html"><img src="img/basket.svg" alt="basket"></a>
+                        <a href="cart.html"><img class="logo" src="img/basket.svg" alt="basket"></a>
                     </li>
                 </ul>
             </div>
@@ -240,8 +237,8 @@
     <footer>
         <div class="footer_content">
             <div class="footer_block container">
-                <div class="footer_info">
-                    <a class="footer_link" href="">
+                <div class="footer_info logo">
+                    <a class="footer_link" href="#">
                         <img class="footer_info_content" src="img/delivery.svg" alt="photo">
                         <h2 class="footer_item">Free Delivery</h2>
                         <p class="footer_paragraph_content">
@@ -251,8 +248,8 @@
                         </p>
                     </a>
                 </div>
-                <div class="footer_info_block">
-                    <a class="footer_link" href="">
+                <div class="footer_info_block logo">
+                    <a class="footer_link" href="#">
                         <img class="footer_picture" src="img/discounts.svg" alt="photo">
                         <h2 class="footer_item">Sales & discounts</h2>
                         <p class="footer_paragraph_content">
@@ -262,8 +259,8 @@
                         </p>
                     </a>
                 </div>
-                <div class="footer_info">
-                    <a class="footer_link" href="">
+                <div class="footer_info logo">
+                    <a class="footer_link" href="#">
                         <img class="footer_illustration" src="img/quality_assurance.svg" alt="photo">
                         <h2 class="footer_item">Quality assurance</h2>
                         <p class="footer_paragraph_content">
@@ -403,7 +400,6 @@
             menu.classList.remove("shown")
         }
     </script>
-
 
 </body>
 
