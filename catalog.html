@@ -100,10 +100,12 @@
 
         <nav class="main_menu container">
             <div class="main_menu_text">
-                <button class="main_button">
-                    <h2>FILTER</h2>
-                    <img class="filter_img" src="img/filter black.svg" alt="#">
-                </button>
+                <div class="main_filter_button">
+                    <button class="main_button">
+                        <h2>FILTER</h2>
+                        <img class="filter_img" src="img/filter black.svg" alt="#">
+                    </button>
+                </div>
                 <ul class="main_menu_filter">
                     <div class="filter_heading_text">
                         <li class="main_filter_heading">FILTER</li>
@@ -188,17 +190,75 @@
             </div>
 
             <div class="main_menu_content">
-                <button class="main_button_menu">
-                    <h2>TRENDING NOW</h2>
+                <ul class="main_top_menu">
+                    <li class="main_button_menu">
+                        <span>TRENDING NOW</span>
+                        <img class="main_button_image" src="img/size.svg" alt="#">
+                    </li>
+
+                    <li class="main_button_menu size">
+                        <span>SIZE</span>
+                        <img class="main_button_image" src="img/size.svg" alt="#">
+
+                        <ul class="main_button_submenu">
+                            <li class="main_list_size">
+                                <input type="checkbox" class="main_input" id="xs"><label class="main_size"
+                                    for="xs">XS</label>
+                            </li>
+                            <li class="main_list_size">
+                                <input type="checkbox" class="main_input" id="s"><label class="main_size"
+                                    for="s">S</label>
+                            </li>
+                            <li class="main_list_size">
+                                <input type="checkbox" class="main_input" id="m"><label class="main_size"
+                                    for="m">M</label>
+                            </li>
+                            <li class="main_list_size">
+                                <input type="checkbox" class="main_input" id="l"><label class="main_size"
+                                    for="l">L</label>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="main_button_menu">
+                        <span>PRICE</span>
+                        <img class="main_button_image" src="img/size.svg" alt="#">
+                    </li>
+                </ul>
+
+                <!-- <button class="main_button_menu">
+                    <span>TRENDING NOW</span>
+                    <img class="main_button_image" src="img/size.svg" alt="#">
                 </button>
-                <button class="main_button_menu">
-                    <h2 class="main_heading">SIZE</h2>
+
+                <button class="main_button_menu size">
+                    <span class="main_heading">SIZE</span>
+                    <img class="main_button_image" src="img/size.svg" alt="#">
                 </button>
+
+                <div class="main_button_size_text">
+                    <ul class="button_size">
+                        <li class="main_list_size">
+                            <input type="checkbox" class="main_input" id="xs"><label class="main_size"
+                                for="xs">XS</label>
+                        </li>
+                        <li class="main_list_size">
+                            <input type="checkbox" class="main_input" id="s"><label class="main_size" for="s">S</label>
+                        </li>
+                        <li class="main_list_size">
+                            <input type="checkbox" class="main_input" id="m"><label class="main_size" for="m">M</label>
+                        </li>
+                        <li class="main_list_size">
+                            <input type="checkbox" class="main_input" id="l"><label class="main_size" for="l">L</label>
+                        </li>
+                    </ul>
+                </div>
+
                 <button class="main_button_menu">
-                    <h2>PRICE</h2>
-                </button>
+                    <span>PRICE</span>
+                    <img class="main_button_image" src="img/size.svg" alt="#">
+                </button> -->
             </div>
-            <div></div>
         </nav>
 
         <div class="card container">
@@ -392,7 +452,7 @@
                 <ul class="pagination_menu">
                     <li class="pagination_item"><a href="#"><span class="arrow">
                                 < </span></a></li>
-                    <li class="pagination_item"><a href="#">1</a></li>
+                    <li class="pagination_item"><a class="pagination_link" href="#">1</a></li>
                     <li class="pagination_item"><a href="#">2</a></li>
                     <li class="pagination_item"><a href="#">3</a></li>
                     <li class="pagination_item"><a href="#">4</a></li>
