@@ -62,6 +62,10 @@ table {
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
@@ -71,6 +75,7 @@ body {
 .container {
   width: 1140px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .header_content {
@@ -104,8 +109,12 @@ body {
   position: relative;
 }
 
-.header_content .header_menu .header_menu_item:not(:first-child) {
-  margin-left: 16px;
+.header_content .header_menu .header_menu_item .menu_logo {
+  margin-right: 40px;
+}
+
+.header_content .header_menu .header_menu_item .menu_logo_item {
+  margin-right: 25px;
 }
 
 .header_content .header_menu .header_menu_item .menu-button {
@@ -260,6 +269,10 @@ body {
 
 .offers .offers_item:hover .offers_text .offer_text_container {
   background-color: rgba(32, 22, 22, 0.7);
+}
+
+.offers .offers_item .offers_image {
+  max-width: 100%;
 }
 
 .offers .offers_item .offers_text {
@@ -1339,9 +1352,14 @@ body {
 
 .main .main_card .main_card_position .main_card_content .main_card_block .main_text_card .main_list_card .quantity {
   border: 1px solid #EAEAEA;
-  padding: 0 15px;
+  padding-left: 15px;
   margin-left: 25px;
   color: #575757;
+  outline: none;
+  line-height: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 44px;
 }
 
 .main .main_card .main_card_position .main_button_card {
@@ -1649,5 +1667,126 @@ body {
 
 .registration_form {
   margin-top: 96px;
+}
+
+@media (max-width: 768px) {
+  .header_content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .heading .heading_items .heading_picture {
+    height: 368px;
+    padding-left: 100px;
+    padding-top: 5px;
+  }
+  .heading .heading_items .heading_text {
+    font-size: 24px;
+    line-height: 28px;
+    padding-right: 25px;
+  }
+  .offers .offers_parent {
+    margin: 20px;
+  }
+  .offers .picture {
+    margin: 0 20px 0;
+  }
+  .card_heading_text {
+    margin: 155px 0 57px;
+  }
+  .card .card_block {
+    margin: 0 16px 0;
+  }
+  .card .card_block .card_content {
+    margin-top: 16px;
+  }
+  .push {
+    margin: 33px 0 65px;
+  }
+  .footer_content .footer_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    height: 610px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .footer_content .footer_block .footer_paragraph_content {
+    padding-bottom: 0;
+  }
+  .footer_content .footer_block .footer_link .footer_info_content {
+    padding-top: 48px;
+  }
+  .footer_content .footer_block .footer_link .footer_picture {
+    padding-top: 48px;
+  }
+  .footer_content .footer_block .footer_link .footer_illustration {
+    padding-top: 48px;
+  }
+  .footer_subscription {
+    height: auto;
+  }
+  .footer_subscription .footer_subscription_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer_subscription .footer_subscription_container .footer_contact {
+    margin-top: 54px;
+  }
+  .footer_subscription .footer_subscription_content {
+    padding-bottom: 60px;
+  }
+  .footer_subscription .footer_entry_field .subscribe_item {
+    padding-bottom: 140px;
+  }
+  .footer_subscription .footer_entry_field .footer_entry_subscribe {
+    padding-top: 0;
+  }
+  .footer_right {
+    height: auto;
+    padding: 24px 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header_content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header_content .header_item .header_menu_item .menu-button {
+    padding: 0;
+  }
+  .header_content .header_item .header_menu_item .menu_logo_item {
+    margin-right: 0;
+  }
+  .header_content .header_item .header_menu_item .item_none {
+    display: none;
+  }
+  .heading {
+    height: 363px;
+  }
+  .heading .heading_items .heading_picture {
+    display: none;
+  }
+  .heading .heading_items .heading_text {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 148px 56px;
+    height: 66px;
+  }
+  .heading .heading_items .heading_text .the_brand {
+    font-size: 38px;
+    line-height: 46px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

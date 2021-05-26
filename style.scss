@@ -9,6 +9,10 @@
 $highlight-color: #F16D7F;
 $highlight-color-hover: #E05C6E;
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
@@ -18,6 +22,7 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .header_content {
@@ -35,10 +40,15 @@ body {
             justify-content: center;
             align-items: center;
             position: relative;
-            &:not(:first-child) {
-                margin-left:16px;
+
+            .menu_logo {
+                margin-right: 40px;
             }
-            
+
+            .menu_logo_item {
+               margin-right: 25px;
+            }
+
             .menu-button {
                 border: none;
                 outline: none;
@@ -46,8 +56,6 @@ body {
                 cursor: pointer;
             }
         }
-
-        
     }
 }
 
@@ -175,6 +183,11 @@ body {
                 }
             }
         }
+
+        .offers_image {
+            max-width: 100%;
+        }
+
         .offers_text {
             position: absolute;
             display: flex;
@@ -1113,9 +1126,13 @@ body {
     
                             .quantity {
                                 border: 1px solid #EAEAEA;
-                                padding: 0 15px;
+                                padding-left: 15px;
                                 margin-left: 25px;
-                                color: #575757
+                                color: #575757;
+                                outline: none;
+                                line-height: 22px;
+                                box-sizing: border-box;
+                                width: 44px;
                             }
                         }                  
                     }
@@ -1351,7 +1368,6 @@ body {
                     background: $highlight-color-hover;
                 }
             }
-            
         }
 
         .registration_loyalty {
@@ -1376,14 +1392,9 @@ body {
             .registration_check {
                 padding-right: 23px;
             }
-
-            
         }   
-        
-        
     }
 }
-
 
 .product {
     margin-top: 128px;
@@ -1393,3 +1404,168 @@ body {
     margin-top: 96px;
 }
 
+
+
+
+@media (max-width:768px) {
+
+    .header_content {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .heading {
+        .heading_items {
+            .heading_picture {
+                height: 368px;
+                padding-left: 100px;
+                padding-top: 5px;
+            }
+
+            .heading_text {
+                font-size: 24px;
+                line-height: 28px;
+                padding-right: 25px;
+                
+
+            }
+        }
+    }
+
+    .offers {
+        .offers_parent {
+            margin: 20px;
+        }
+
+        .picture {
+           margin: 0 20px 0; 
+        }
+    }
+    
+    .card_heading_text {
+        margin: 155px 0 57px;
+    }
+
+    .card {
+        .card_block {
+            margin: 0 16px 0;
+
+            .card_content {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    .push {
+        margin: 33px 0 65px;
+    }
+
+    .footer_content {
+        .footer_block {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            height: 610px;
+            justify-content: start;
+
+            .footer_paragraph_content {
+                padding-bottom: 0;
+            }
+
+            .footer_link {
+                .footer_info_content {
+                    padding-top: 48px;
+                }
+
+                .footer_picture {
+                    padding-top: 48px;
+                }
+
+                .footer_illustration {
+                    padding-top: 48px;
+                }
+            }
+        }
+    }
+
+    .footer_subscription {
+        height: auto;
+
+        .footer_subscription_container {
+            flex-direction: column;
+            align-items: center;
+
+            .footer_contact {
+                margin-top: 54px;
+            }
+        }
+
+        .footer_subscription_content {
+            padding-bottom: 60px;
+        }
+
+        .footer_entry_field {
+            .subscribe_item {
+                padding-bottom: 140px;
+            }
+            
+            .footer_entry_subscribe {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .footer_right {
+        height: auto;
+        padding: 24px 32px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .header_content {
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .header_item {
+            .header_menu_item {
+                .menu-button {
+                    padding: 0;
+                }
+                .menu_logo_item {
+                    margin-right: 0;
+                }
+
+                .item_none {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .heading {
+        height: 363px;
+
+        .heading_items {
+            .heading_picture {
+                display: none;
+            }
+
+            .heading_text {
+                font-size: 20px;
+                line-height: 24px;
+                margin: 148px 56px ;
+                height: 66px;
+                
+                .the_brand {
+                    font-size: 38px;
+                    line-height: 46px;
+                    
+                }
+            }
+        }
+    }
+}
+
+// Заголовок (THE BRAND OF LUXERIOUS FASHION) остановилась
