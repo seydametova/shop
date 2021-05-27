@@ -1711,7 +1711,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: auto;
-    height: 610px;
+    padding-bottom: 64px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -1781,12 +1781,80 @@ body {
   .heading .heading_items .heading_text {
     font-size: 20px;
     line-height: 24px;
-    margin: 148px 56px;
+    margin: 148px 0;
     height: 66px;
+    margin-left: 56px;
   }
   .heading .heading_items .heading_text .the_brand {
     font-size: 38px;
     line-height: 46px;
+  }
+  .offers .offers_parent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 32px 16px 0;
+  }
+  .offers .picture {
+    margin: 32px 0;
+  }
+  .offers .offers_picture {
+    margin: 32px 16px 0;
+  }
+  .offers .offers_picture .item_offers {
+    height: 111px;
+  }
+  .card_heading_text {
+    margin: 64px 0;
+  }
+  .card .card_block {
+    margin: 0 8px 0;
+  }
+  .card .card_block .card_content {
+    margin-top: 16px;
+  }
+  .card .card_block .card_picture {
+    margin-top: 0;
+  }
+  .push {
+    margin: 42px 0 96px;
+  }
+  .footer_content .footer_block {
+    padding-bottom: 80px;
+    height: auto;
+  }
+  .footer_content .footer_block .footer_paragraph_content {
+    width: 300px;
+  }
+  .footer_content .footer_block .footer_paragraph_content .text_indent {
+    margin-bottom: 80px;
+  }
+  .footer_subscription {
+    height: auto;
+  }
+  .footer_subscription .footer_subscription_content {
+    padding-bottom: 60px;
+    font-size: 18px;
+  }
+  .footer_subscription .footer_entry_field .subscribe_item {
+    padding-bottom: 110px;
+  }
+  .footer_subscription .footer_entry_field .footer_entry_subscribe {
+    font-size: 14px;
+    padding-bottom: 22px;
+  }
+  .footer_right .footer_right_content {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 44px 8px 0;
+  }
+  .footer_right .footer_right_content .footer_connection_text {
+    padding-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

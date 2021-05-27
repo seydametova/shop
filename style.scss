@@ -1465,7 +1465,7 @@ body {
             flex-direction: column;
             align-items: center;
             height: auto;
-            height: 610px;
+            padding-bottom: 64px;
             justify-content: start;
 
             .footer_paragraph_content {
@@ -1555,8 +1555,9 @@ body {
             .heading_text {
                 font-size: 20px;
                 line-height: 24px;
-                margin: 148px 56px ;
+                margin: 148px 0;
                 height: 66px;
+                margin-left: 56px;
                 
                 .the_brand {
                     font-size: 38px;
@@ -1566,6 +1567,95 @@ body {
             }
         }
     }
+
+    .offers {
+        .offers_parent {
+            flex-wrap: wrap;
+            margin: 32px 16px 0;
+        }
+
+        .picture {
+            margin: 32px 0;
+        }
+
+        .offers_picture {
+            margin: 32px 16px 0;
+         
+            .item_offers {
+                height: 111px;
+            }
+        }
+    }
+
+    .card_heading_text {
+        margin: 64px 0 ;
+    }
+
+    .card {
+        .card_block {
+            margin: 0 8px 0;
+
+            .card_content {
+                margin-top: 16px;
+            }
+
+            .card_picture {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .push {
+        margin: 42px 0 96px;
+    }
+
+    .footer_content {
+        .footer_block {
+            padding-bottom: 80px;
+            height: auto;
+
+            .footer_paragraph_content {
+                width: 300px;
+
+                .text_indent {
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+
+    .footer_subscription {
+        height: auto;
+
+        .footer_subscription_content {
+            padding-bottom: 60px;
+            font-size: 18px;
+        }
+
+        .footer_entry_field {
+            .subscribe_item {
+                padding-bottom: 110px;
+            }
+
+            .footer_entry_subscribe {
+                font-size: 14px;
+                padding-bottom: 22px;
+            }
+        }
+    }
+
+    .footer_right {
+        .footer_right_content {
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 44px 8px 0;
+
+            .footer_connection_text {
+                padding-top: 40px;
+            }
+        }
+        
+    }
 }
 
-// Заголовок (THE BRAND OF LUXERIOUS FASHION) остановилась
