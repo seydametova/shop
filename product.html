@@ -32,11 +32,11 @@
                         </button>
                     </li>
                     <li class="header_menu_item">
-                        <a href="registration.html"><img class="logo menu_logo" src="img/my_profile.svg"
+                        <a href="registration.html"><img class="logo menu_logo item_none" src="img/my_profile.svg"
                                 alt="profile"></a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="cart.html"><img class="logo" src="img/basket.svg" alt="basket"></a>
+                        <a href="cart.html"><img class="logo item_none" src="img/basket.svg" alt="basket"></a>
                     </li>
                 </ul>
             </div>
@@ -105,9 +105,30 @@
 
             <div class="main_menu_item container">
                 <ul class="main_menu_top_item">
-                    <li class="main_button_link">
-                        <span>CHOOSE COLOR</span>
-                        <img class="main_image" src="img/size.svg" alt="#">
+                    <li class="main_button_link size_content">
+                        <div class="button_main">
+                            <span>CHOOSE COLOR</span>
+                            <img class="main_image" src="img/size.svg" alt="#">
+                        </div>
+
+                        <ul class="submenu_button choose_color">
+                            <li class="button_size">
+                                <input type="checkbox" class="size_button_main" id="black"><label class="label_item"
+                                    for="black">Black</label>
+                            </li>
+                            <li class="button_size">
+                                <input type="checkbox" class="size_button_main" id="red"><label class="label_item"
+                                    for="red">Red</label>
+                            </li>
+                            <li class="button_size">
+                                <input type="checkbox" class="size_button_main" id="white"><label class="label_item"
+                                    for="white">White</label>
+                            </li>
+                            <li class="button_size">
+                                <input type="checkbox" class="size_button_main" id="green"><label class="label_item"
+                                    for="green">Green</label>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="main_button_link size_content">
@@ -136,9 +157,27 @@
                         </ul>
                     </li>
 
-                    <li class="main_button_link">
-                        <span class="main_link">QUANTITY</span>
-                        <img class="main_image" src="img/size.svg" alt="#">
+                    <li class="main_button_link size_content">
+                        <div class="button_main">
+                            <span class="main_link">QUANTITY</span>
+                            <img class="main_image" src="img/size.svg" alt="#">
+                        </div>
+
+                        <div class="submenu_button quantity">
+                            <label class="submenu_item">
+                                <input class="button_quantity_item" name="quantity_item" type="radio" value="1">1
+                            </label>
+                            <label class="submenu_item">
+                                <input class="button_quantity_item" name="quantity_item" type="radio" value="2">2
+                            </label>
+                            <label class="submenu_item">
+                                <input class="button_quantity_item" name="quantity_item" type="radio" value="3">3
+                            </label>
+                            <label class="submenu_item">
+                                <input class="button_quantity_item" name="quantity_item" type="radio" value="4">4
+                            </label>
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -159,7 +198,7 @@
 
         <div class="card container">
             <div class="card_block">
-                <a href="product.html" class="card_content">
+                <a href="product.html" class="card_content indent_none">
                     <div class="image_container">
                         <img class="сard_product" src="img/4.png" alt="product">
                         <div class="add_to_cart_container">
@@ -178,7 +217,7 @@
                         <p class="card_value">$52.00</p>
                     </div>
                 </a>
-                <a href="product.html" class="card_content">
+                <a href="product.html" class="card_content indent_none card_hide">
                     <div class="image_container">
                         <img class="сard_product" src="img/3.png" alt="product">
                         <div class="add_to_cart_container">
@@ -197,7 +236,7 @@
                         <p class="card_value">$52.00</p>
                     </div>
                 </a>
-                <a href="product.html" class="card_content">
+                <a href="product.html" class="card_content hide">
                     <div class="image_container">
                         <img class="сard_product" src="img/6.png" alt="product">
                         <div class="add_to_cart_container">
