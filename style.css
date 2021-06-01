@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -76,6 +77,8 @@ body {
   width: 1140px;
   margin: 0 auto;
   max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header_content {
@@ -263,6 +266,10 @@ body {
   display: block;
 }
 
+.offers .offers_item:not(:first-child) {
+  margin-left: 30px;
+}
+
 .offers .offers_item:hover .offers_text {
   background-color: transparent;
 }
@@ -310,6 +317,10 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #F16D7F;
+}
+
+.offers .offers_item.offers_picture {
+  margin-left: 0;
 }
 
 .card_heading_text {
@@ -1169,7 +1180,7 @@ body {
   cursor: pointer;
   top: 100%;
   z-index: 10;
-  left: 42px;
+  right: 0;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -1193,6 +1204,37 @@ body {
   color: #6F6E6E;
   padding-left: 9px;
   cursor: pointer;
+}
+
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button.choose_color {
+  left: 20px;
+  width: 100px;
+}
+
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button.quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60px;
+}
+
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button.quantity .submenu_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 4px;
+}
+
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button.quantity .submenu_item .button_quantity_item {
+  margin: 0;
+  margin-right: 10px;
 }
 
 .main .main_cart .main_menu_item .main_menu_top_item .main_button_link.size_content:hover .submenu_button {
@@ -1687,7 +1729,7 @@ body {
   .offers .offers_parent {
     margin: 20px;
   }
-  .offers .picture {
+  .offers .offers_item.picture {
     margin: 0 20px 0;
   }
   .card_heading_text {
@@ -1698,6 +1740,9 @@ body {
   }
   .card .card_block .card_content {
     margin-top: 16px;
+  }
+  .card .card_block .indent_none {
+    margin-top: 0;
   }
   .push {
     margin: 33px 0 65px;
@@ -1758,7 +1803,7 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .header_content {
     padding-left: 16px;
     padding-right: 16px;
@@ -1794,11 +1839,21 @@ body {
         flex-wrap: wrap;
     margin: 32px 16px 0;
   }
+  .offers .offers_item:not(:first-child):not(.picture) {
+    margin-left: 0;
+  }
   .offers .picture {
     margin: 32px 0;
   }
-  .offers .offers_picture {
+  .offers .offers_item.picture {
     margin: 32px 16px 0;
+  }
+  .offers .offers_item {
+    margin-top: 32px;
+    width: 100%;
+  }
+  .offers .offers_item .offers_image {
+    width: 100%;
   }
   .offers .offers_picture .item_offers {
     height: 111px;
@@ -1808,12 +1863,27 @@ body {
   }
   .card .card_block {
     margin: 0 8px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .card .card_block .card_content {
     margin-top: 16px;
   }
-  .card .card_block .card_picture {
+  .card .card_block .card_content .сard_product {
+    width: 100%;
+  }
+  .card .card_block .indent_none {
     margin-top: 0;
+    margin-bottom: 0;
+  }
+  .card .card_block .indent_card {
+    margin-top: 16px;
   }
   .push {
     margin: 42px 0 96px;
@@ -1842,6 +1912,9 @@ body {
     font-size: 14px;
     padding-bottom: 22px;
   }
+  .footer_right {
+    padding: 44px 8px 10px;
+  }
   .footer_right .footer_right_content {
     height: auto;
     display: -webkit-box;
@@ -1851,7 +1924,6 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 44px 8px 0;
   }
   .footer_right .footer_right_content .footer_connection_text {
     padding-top: 40px;
