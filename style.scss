@@ -77,6 +77,7 @@ body {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     right: -232px;
     transition: right 0.5s ease-in-out;;
+    cursor: pointer;
 
     &.shown {
         right: 0;
@@ -113,20 +114,34 @@ body {
             margin-top: 20px;
             font-size: 14px;
             line-height: 17px;
+            
 
             .group_link {                            
                 color: $highlight-color;
+
+                &:hover {
+                    color: $highlight-color-hover;
+                }
             } 
             .link_menu {
                 margin-top: 12px;
-                margin-left: 20px;                        
+                margin-left: 20px; 
+
                 a {
                     color: #6F6E6E;
+
+                    &:hover {
+                        color: $highlight-color;
+                    }
                 }
+
+                
+                
             }
             a {
                 text-decoration: none;
             }
+            
         }
     }
 }
@@ -332,6 +347,7 @@ body {
                     font-size: 16px;
                     line-height: 19px;
                     color: $highlight-color;
+                    
                 }
             }
         }
@@ -557,7 +573,6 @@ body {
                 color: $highlight-color;
                 padding: 60px 0;
     
-    
             }
     
             .main_header_menu {
@@ -566,7 +581,12 @@ body {
                 font-size: 14px;
                 line-height: 17px;
                 
-    
+                .main_text_catalog {
+                    &:hover {
+                        color: $highlight-color;
+                    }
+                }
+
                 .main_text {
                     display: inline-flex;
                     justify-content: center;
@@ -675,12 +695,21 @@ body {
                             padding: 10px;
                             margin-top: 16px;
                             font-size: 14px;
+                            &:hover {
+                                color: $highlight-color;
+                                border-left: 5px solid $highlight-color-hover;
+
+                            }
                         }
         
                         .main_filter_list {
                             list-style-type: none;
                             padding-top: 16px;
                             padding-left: 16px;
+                            a:hover {
+                                color: $highlight-color;
+
+                            }
         
                             .main_category {
                                 padding-bottom: 10px;
@@ -692,7 +721,6 @@ body {
                                 color: inherit;
                             }
                         }
-        
                     }
     
                     &:hover .main_menu_filter {
@@ -704,9 +732,11 @@ body {
 
         .main_menu_content {
             margin-left: 24px;
+            cursor: pointer;
 
             .main_top_menu {
                 display: flex;
+                
 
                 .main_button_menu {
                     font-size: 14px;
@@ -714,6 +744,16 @@ body {
                     color: #6F6E6E;
                     margin-right: 24px;
                     position: relative;
+                    &:hover {
+                        color: $highlight-color;
+                    }
+
+                    &:hover {
+                        
+                        path {
+                            fill: $highlight-color;
+                        }
+                    }
 
                     .main_button_top {
                         cursor: pointer;
@@ -721,6 +761,7 @@ body {
                     
                     .main_button_image {
                         padding-left: 10px;
+                        
                     }
 
                     .main_button_submenu {
@@ -730,14 +771,14 @@ body {
                         padding: 10px;
                         font-size: 14px;
                         line-height: 16px;
-                        width: 80px;
+                        width: 70px;
                         margin-top: 5px;
                         box-sizing: border-box;
                         transform: scaleY(0);
                         transform-origin: 0 0;
                         cursor: pointer;
                         top: 100%;
-                        left: -16px;
+                        right: 0;
                         z-index: 10;
                         transition: transform 0.5s ease-in-out;
         
@@ -754,12 +795,38 @@ body {
                             color: #6F6E6E;
                             padding-left: 9px;
                             cursor: pointer;
+                            &:hover {
+                                color: $highlight-color;
+                            }
                         }
+
+                        &.form_price {
+                            width: 152px;
+                        }
+
+                        .main_submenu_trend {
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #6F6E6E;
+                            margin-right: 24px;
+                            position: relative;
+                            text-decoration: none;
+                            padding-bottom: 6px;
+                            &:hover {
+                                color: $highlight-color;
+                            }
+                        }
+                    }
+
+                    .width_button {
+                        width: 136px;
+                        right: 0;
                     }
 
                     &.size_item:hover .main_button_submenu {
                         transform: scaleY(1);
                     }
+
                     
                 }
             }
@@ -960,6 +1027,7 @@ body {
                     line-height: 17px;
                     color: #6F6E6E;
                     position: relative;
+                    
                    
                     .button_main {
                         cursor: pointer;
@@ -981,6 +1049,7 @@ body {
                         top: 100%;
                         z-index: 10;
                         right: 0;
+                        font-weight: 'Lato';
                         transition: transform 0.5s ease-in-out;
 
                         .button_size {
@@ -1559,78 +1628,6 @@ body {
         height: auto;
         padding: 24px 32px;
     }
-
-
-    // // Catalog
-
-    // .main {
-    //     .main_banner_content {
-    //         .main_banner {
-    //             .main_header {
-    //                 padding-left: 16px;
-    //             }
-
-    //             .main_header_menu {
-    //                 padding-right: 16px;
-    //             }
-    //         }
-    //     }
-
-    //     .main_menu {
-    //         justify-content: space-between;
-    //         padding: 24px 16px 40px;
-
-    //         .main_menu_content {
-    //             margin: 0;
-    //             .main_top_menu {
-    //                 .indent_button {
-    //                     margin: 0;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     .main_menu_text {
-    //         .main_filter_button {
-    //             .item_menu {
-    //                 .main_button {
-    //                     padding: 0;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     .card {
-    //         .card_block {
-    //             .hide {
-    //                 display: none;
-    //             }
-    //         }
-    //     }
-
-    //     .pagination {
-    //         margin-top: 40px;
-    //         margin-bottom: 64px;
-    //     }
-        
-    //     // Product
-
-    //     .main_product {
-    //         .main_content {
-    //             .main_content_item {
-    //                 .menu_item_product {
-    //                     padding: 30px 104px;
-    //                     width: 466px;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     .main_cart {
-    //         top: 0;
-    //     }
-    // }
-
 }
 
 @media (max-width: 500px) {
@@ -1796,76 +1793,5 @@ body {
         }
         
     }
-
-    // // Catalog
-
-    // .main {
-    //     .main_banner_content {
-    //         .main_banner {
-    //             flex-direction: column;
-
-    //             .main_header {
-    //                 width: 172px;
-    //                 padding: 24px 102px 32px;
-    //             }
-
-    //             .main_header_menu {
-    //                 width: 211px;
-    //                 padding: 0 83px 46px;
-    //             }
-    //         }
-    //     }
-
-    //     .main_menu {
-    //         padding: 24px 8px 32px;
-
-    //         .main_menu_text {
-    //             .main_filter_button {
-    //                 width: 100%;
-
-    //                 .item_menu {
-    //                     .main_button {
-    //                         .filter_none {
-    //                             display: none;
-    //                         }
-
-    //                         .filter_img {
-    //                             padding: 0;
-    //                             width: 37px;
-    //                             height: 25px;
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //         }
-
-    //         .main_menu_content {
-    //             .main_top_menu {
-    //                 .main_button_menu {
-    //                     font-size: 12px;
-    //                     line-height: 14px;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     // Product
-
-    //     .card {
-    //         .card_block {
-    //             .card_hide{
-    //                 display: none;
-    //             }
-
-    //             .hide {
-    //                display: block; 
-    //                margin-top: 16px;
-    //             }
-    //         }
-    //     }
-
-    //     // адаптив для телефона product
-    // }
-
 }   
 
