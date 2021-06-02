@@ -785,6 +785,10 @@ body {
                         .main_list_size {
                             display: flex;
                             align-items: center;
+
+                            .button_form {
+                                width: 100%;
+                            }
                         }
 
                         .main_input {
@@ -1027,6 +1031,16 @@ body {
                     line-height: 17px;
                     color: #6F6E6E;
                     position: relative;
+                    &:hover {
+                        color: $highlight-color;
+                    }
+
+                    &:hover {
+                        
+                        path {
+                            fill: $highlight-color;
+                        }
+                    }
                     
                    
                     .button_main {
@@ -1051,10 +1065,15 @@ body {
                         right: 0;
                         font-weight: 'Lato';
                         transition: transform 0.5s ease-in-out;
+                        cursor: pointer;
 
                         .button_size {
                             display: flex;
                             align-items: center;
+                            cursor: pointer;
+                            &:hover {
+                                color: $highlight-color;
+                            }
                         }
 
                         .size_button_main {
@@ -1063,8 +1082,11 @@ body {
 
                         .label_item {
                             color: #6F6E6E;
-                            padding-left: 9px;
+                            padding-left: 4px;
                             cursor: pointer;
+                            &:hover {
+                                color: $highlight-color;
+                            }
                         }
 
                         &.choose_color {
@@ -1081,10 +1103,15 @@ body {
                                 display: flex;
                                 align-items: center;
                                 padding-bottom: 4px;
+                                cursor: pointer;
 
                                 .button_quantity_item {
                                     margin: 0;
                                     margin-right: 10px;
+                                    cursor: pointer;
+                                    &:hover {
+                                        color: $highlight-color;
+                                    }
                                 }
                             }
                         }
@@ -1308,6 +1335,11 @@ body {
                 &::placeholder {
                     color: #B1B1B1;
                 }
+
+                &:hover {
+                    box-shadow: 0 0 10px rgba(164, 164, 164, 1.5);
+                    
+                }
             }
 
             .get_quote {
@@ -1415,12 +1447,17 @@ body {
                 width: 100%;
                 margin-top: 20px;
                 padding: 12px 16px;
-                border: 1px solid #A4A4A4;
+                border: 1px solid #a4a4a4;
                 font-family: 'Lato';
                 outline: none;
                 box-sizing: border-box;
                 &::placeholder {
                     color: #B1B1B1;
+                }
+
+                &:hover {
+                    box-shadow: 0 0 10px rgba(164, 164, 164, 1.5);
+                    
                 }
             }
 
@@ -1511,7 +1548,7 @@ body {
 
 
 
-@media (max-width:768px) {
+@media (max-width:1440px) {
 
     .header_content {
         padding-left: 32px;
@@ -1541,8 +1578,8 @@ body {
             margin: 20px;
         }
 
-        .offers_item.picture {
-           margin: 0 20px 0; 
+        .offers_accesories {
+            margin: 30px 20px 0;
         }
     }
     
@@ -1553,20 +1590,14 @@ body {
     .card {
         .card_block {
             margin: 0 16px 0;
+            display: flex;
+            justify-content: space-around;
             
             
             .card_content {
                 margin-top: 16px;
             }
-
-            .indent_none {
-                margin-top: 0;
-            }
         }
-    }
-
-    .push {
-        margin: 33px 0 65px;
     }
 
     .footer_content {
@@ -1678,19 +1709,15 @@ body {
     .offers {
         .offers_parent {
             flex-wrap: wrap;
-            margin: 32px 16px 0;
+           
+        }
+
+        .offers_accesories {
+            margin: 0 20px 0;
         }
 
         .offers_item:not(:first-child):not(.picture) {
             margin-left: 0;
-        }
-
-        .picture {
-            margin: 32px 0;
-        }
-
-        .offers_item.picture {
-            margin: 32px 16px 0; 
         }
 
         .offers_item {

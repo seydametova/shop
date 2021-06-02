@@ -236,8 +236,9 @@
 
                         <ul class="main_button_submenu form_price">
                             <li class="main_list_size">
-                                <form oninput="result.value=(range.value)" action="#" class="button_form">
-                                    <input id="range" type="range" value="1000" step="1" max="100000" min="1000">
+                                <form oninput="result.value=(range.value)" action="#">
+                                    <input class="button_form" id="range" type="range" value="1000" step="1"
+                                        max="100000" min="1000">
                                     <output name="result" for="range">1000</output> RUB
                                 </form>
                             </li>
@@ -425,8 +426,8 @@
 
         <div class="pagination container">
             <nav class="pagination_content">
-                <ul class="pagination_menu">
-                    <li class="pagination_arrow">
+                <div class="pagination_menu">
+                    <div class="pagination_arrow">
                         <a href="#" class="hover_item">
                             <svg class="svg_item" width="13" height="23" viewBox="0 0 13 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -435,7 +436,7 @@
                                     fill="black" />
                             </svg>
                         </a>
-                    </li>
+                    </div>
                     <ul class="pagination_roster">
                         <li class="pagination_item"><a href="#" class="list_item">1</a></li>
                         <li class="pagination_item"><a href="#" class="list_item">2</a></li>
@@ -450,7 +451,7 @@
                         <li class="pagination_point"><a href="#" class="list_item">.</a></li>
                         <li class="pagination_point"><a href="#" class="list_item">20</a></li>
                     </ul>
-                    <li class="pagination_arrow">
+                    <div class="pagination_arrow">
                         <a href="#" class="hover_item">
                             <svg class="svg_item rotate_arrow" width="13" height="23" viewBox="0 0 13 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -459,8 +460,8 @@
                                     fill="black" />
                             </svg>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </main>

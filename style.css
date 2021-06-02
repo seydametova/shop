@@ -946,6 +946,10 @@ body {
           align-items: center;
 }
 
+.main .main_menu .main_menu_content .main_top_menu .main_button_menu .main_button_submenu .main_list_size .button_form {
+  width: 100%;
+}
+
 .main .main_menu .main_menu_content .main_top_menu .main_button_menu .main_button_submenu .main_input {
   cursor: pointer;
 }
@@ -1215,6 +1219,14 @@ body {
   position: relative;
 }
 
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link:hover {
+  color: #F16D7F;
+}
+
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link:hover path {
+  fill: #F16D7F;
+}
+
 .main .main_cart .main_menu_item .main_menu_top_item .main_button_link .button_main {
   cursor: pointer;
 }
@@ -1244,6 +1256,7 @@ body {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button .button_size {
@@ -1253,6 +1266,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+}
+
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button .button_size:hover {
+  color: #F16D7F;
 }
 
 .main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button .size_button_main {
@@ -1261,8 +1279,12 @@ body {
 
 .main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button .label_item {
   color: #6F6E6E;
-  padding-left: 9px;
+  padding-left: 4px;
   cursor: pointer;
+}
+
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button .label_item:hover {
+  color: #F16D7F;
 }
 
 .main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button.choose_color {
@@ -1289,11 +1311,17 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 4px;
+  cursor: pointer;
 }
 
 .main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button.quantity .submenu_item .button_quantity_item {
   margin: 0;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.main .main_cart .main_menu_item .main_menu_top_item .main_button_link .submenu_button.quantity .submenu_item .button_quantity_item:hover {
+  color: #F16D7F;
 }
 
 .main .main_cart .main_menu_item .main_menu_top_item .main_button_link.size_content:hover .submenu_button {
@@ -1547,6 +1575,11 @@ body {
   color: #B1B1B1;
 }
 
+.main .main_card .cart_form .card_form_field:hover {
+  -webkit-box-shadow: 0 0 10px #a4a4a4;
+          box-shadow: 0 0 10px #a4a4a4;
+}
+
 .main .main_card .cart_form .get_quote {
   font-size: 11px;
   line-height: 13px;
@@ -1668,7 +1701,7 @@ body {
   width: 100%;
   margin-top: 20px;
   padding: 12px 16px;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #a4a4a4;
   font-family: 'Lato';
   outline: none;
   -webkit-box-sizing: border-box;
@@ -1689,6 +1722,11 @@ body {
 
 .main .registration .main_registration .registration_form_field::placeholder {
   color: #B1B1B1;
+}
+
+.main .registration .main_registration .registration_form_field:hover {
+  -webkit-box-shadow: 0 0 10px #a4a4a4;
+          box-shadow: 0 0 10px #a4a4a4;
 }
 
 .main .registration .main_registration .main_gender_item {
@@ -1770,7 +1808,7 @@ body {
   margin-top: 96px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .header_content {
     padding-left: 32px;
     padding-right: 32px;
@@ -1788,23 +1826,22 @@ body {
   .offers .offers_parent {
     margin: 20px;
   }
-  .offers .offers_item.picture {
-    margin: 0 20px 0;
+  .offers .offers_accesories {
+    margin: 30px 20px 0;
   }
   .card_heading_text {
     margin: 155px 0 57px;
   }
   .card .card_block {
     margin: 0 16px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .card .card_block .card_content {
     margin-top: 16px;
-  }
-  .card .card_block .indent_none {
-    margin-top: 0;
-  }
-  .push {
-    margin: 33px 0 65px;
   }
   .footer_content .footer_block {
     -webkit-box-orient: vertical;
@@ -1896,16 +1933,12 @@ body {
   .offers .offers_parent {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 32px 16px 0;
+  }
+  .offers .offers_accesories {
+    margin: 0 20px 0;
   }
   .offers .offers_item:not(:first-child):not(.picture) {
     margin-left: 0;
-  }
-  .offers .picture {
-    margin: 32px 0;
-  }
-  .offers .offers_item.picture {
-    margin: 32px 16px 0;
   }
   .offers .offers_item {
     margin-top: 32px;
